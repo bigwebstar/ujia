@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/m-tongji.css">
+</head>
+<body>
+    <div class="m-tongji">
+        <div class="box-l">
+            <div class="box-l-t">
+                <span class="tit">南京</span>
+                <div class="qushi">
+                    <div class="qushi-1"><span>11月链家参考均价</span></div>
+                    <div class="qushi-2">
+                        <span class="num">29687</span>
+                        <span class="unit">元/平</span>
+                        <span class="line"></span>
+                        <span>
+                            <a href="">在售房源21379套</a>
+                            <a href="">最近90天内成交房源1854套</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="box-l-b">
+                <div class="item item-1-3">
+                    <span>12月7日新增房</span>
+                    <span class="unit">/套</span>
+                    <div class="num">
+                        <span>247</span>
+                    </div>
+                </div>
+				<div class="item item-1-3">
+                    <span>12月7日新增客</span>
+                    <span class="unit">/人</span>
+                    <div class="num">
+                        <span>534</span>
+                    </div>
+                </div>
+				<div class="item item-1-3">
+                    <span>12月7日带看量</span>
+                    <span class="unit">/次</span>
+                    <div class="num">
+                        <span>1603</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-r">
+			<div class="hd">南京最近成交房源</div>
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="">
+							<em>康业里-</em>
+							<span>1室1厅</span>
+							<span>38.66平米</span>
+						</a>
+						<p>
+							<span>签约于2017年11月23日</span>
+							<em>87万</em>
+						</p>
+					</li>
+					<li>
+						<a href="">
+							<em>仁义里小区-</em>
+							<span>3室1厅</span>
+							<span>78.35平米</span>
+						</a>
+						<p>
+							<span>签约于2017年11月23日</span>
+							<em>252万</em>
+						</p>
+					</li>
+					<li>
+						<a href="">
+							<em>金舟花园-</em>
+							<span>2室2厅</span>
+							<span>87.29平米</span>
+						</a>
+						<p>
+							<span>签约于2017年11月23日</span>
+							<em>439万</em>
+						</p>
+					</li>
+					<li>
+						<a href="">
+							<em>新城市假日-</em>
+							<span>3室1厅</span>
+							<span>121.43平米</span>
+						</a>
+						<p>
+							<span>签约于2017年11月23日</span>
+							<em>519万</em>
+						</p>
+					</li>
+					<li>
+						<a href="">
+							<em>云河湾-</em>
+							<span>2室2厅</span>
+							<span>65.15平米</span>
+						</a>
+						<p>
+							<span>签约于2017年11月23日</span>
+							<em>261万</em>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="ft"></div>
+		</div>
+    </div>
+</body>
+</html>
