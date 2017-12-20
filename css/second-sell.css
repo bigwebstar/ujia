@@ -67,7 +67,11 @@ ul.position-content li:last-child {
   display: none;
   margin-left: 50px;
 }
+<<<<<<< HEAD
 .list-more ul {
+=======
+.list_small {
+>>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
   height: 27px;
   overflow: hidden;
   display: block;
@@ -93,7 +97,11 @@ ul.position-content li:last-child {
 .list-more ul li:last-child a span {
   display: inline-block;
 }
+<<<<<<< HEAD
 .list-more ul li:last-child a span:first-child {
+=======
+.fangkuang {
+>>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
   position: absolute;
   background: url(../img/second-sell/sprite.png) no-repeat -535px -185px;
   width: 12px;
@@ -122,6 +130,12 @@ ul.position-content li:last-child {
   line-height: 27px;
   color: #a7a8a9;
 }
+<<<<<<< HEAD
+=======
+.more-plus {
+  cursor: pointer;
+}
+>>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
 .list-more ul:last-child {
   margin-top: 6px;
 }
@@ -244,7 +258,11 @@ ul.position-content li:last-child {
   text-decoration: none;
   color: #666666;
 }
+<<<<<<< HEAD
 .filterAgain ul li a .checkbox {
+=======
+.checkbox {
+>>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
   display: inline-block;
   background-image: url(../img/second-sell/sprite.png);
   /*选中时候的背景图片位置*/

@@ -1,0 +1,47 @@
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-size: 14px;
+  color: #333333;
+  font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.main {
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}

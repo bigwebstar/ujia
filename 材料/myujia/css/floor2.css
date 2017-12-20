@@ -1,0 +1,83 @@
+.floor2-list {
+  position: relative;
+  /*height:815px;*/
+  padding-top: 50px;
+  background: #eeeef1;
+  overflow: hidden;
+}
+.wrapper {
+  position: absolute;
+  width: 1150px;
+}
+.floor2-nav {
+  width: 1150px;
+  margin-bottom: 40px;
+  color: #888;
+}
+.floor2-nav a {
+  display: block;
+  color: #394043;
+}
+.floor2-nav a:hover {
+  text-decoration: underline;
+}
+.floor2-name {
+  background-image: url(../index_img/xiaoqu-recom.png);
+  width: 187px;
+  height: 28px;
+  margin-bottom: 10px;
+  background-size: 100%;
+}
+.ul-container li {
+  width: 350px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  background: #f9f9f9;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.ul-container li:nth-child(3) {
+  margin-right: 0px;
+}
+.ul-container li:nth-child(6) {
+  margin-right: 0px;
+}
+.img-container {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+img {
+  width: 350px;
+  height: 200px;
+  transition: all 0.7s ease-in-out;
+}
+img:hover {
+  width: 359px;
+  height: 206px;
+}
+.title {
+  width: 350px;
+  height: 84px;
+  background: #fff;
+  position: relative;
+  padding: 0 20px;
+}
+.item-name {
+  color: #394043;
+  font-size: 19px;
+  font-weight: bold;
+  padding-top: 20px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.item-desc {
+  color: #394043;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+}
+.item-desc span:nth-child(2) {
+  display: block;
+  float: right;
+}
