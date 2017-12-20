@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+        #allmap{width:80%;height:800px;left:20%;}
+        p{margin-left:5px; font-size:14px;}
+        header{width:100%;height:10%;border-bottom:1px solid black;}
+        header div img{position:absolute;
+            margin-top: 15px;}
+        .select-house{position:absolute;margin-left:10%;margin-top:5px}
+        .select-house p{width:75px;height:20px;background:green;border-radius: 3px;color:white;text-align:center}
+        .select-house p::after{position: absolute; right:3px; top:45%; content: ' '; display: inline-block;
+            width: 0; height: 0; border: 4px solid green;border-top-color:white;}
+        .select-house ul{position:absolute;list-style: none;border:1px solid black;margin-top:-15px;width:32px;margin-left:5px;}
+        .select-house ul li{margin-left:-40px;width:72px;text-align: center;}.select-house ul li:hover{background:gray;}
+        .search-house{width:220px;height:25px;position:absolute;margin-top:15px;margin-left:17%;}
+        .search-house input{width:100%;height:100%;}
+        .search-house div{position:absolute;height:31px;width:70px;margin-top:-31px;margin-left:223px;background:green;text-align:center;
+            color:white;line-height:31px;}
+        .price-house{position:absolute;margin-top:4px;margin-left:540px;}
+        .price-house p{positon:absolute;width:100px;height:25px;border:1px solid gray;line-height:25px;}
+        .price-house ul{list-style: none;position:absolute;width:60px;border:1px solid gray;margin-top:-15px;margin-left:5px;}
+        .price-house ul li{margin-left:-42px;padding-left:5px;}
+
+        .size-house{position:absolute;margin-top:4px;margin-left:660px;}
+        .size-house p{positon:absolute;width:100px;height:25px;border:1px solid gray;line-height:25px;}
+        .size-house ul{list-style: none;position:absolute;width:60px;border:1px solid gray;margin-top:-15px;margin-left:5px;}
+        .size-house ul li{margin-left:-42px;padding-left:5px;}
+
+        .type-house{position:absolute;margin-top:4px;margin-left:780px;}
+        .type-house p{positon:absolute;width:100px;height:25px;border:1px solid gray;line-height:25px;}
+        .type-house ul{list-style: none;position:absolute;width:60px;border:1px solid gray;margin-top:-15px;margin-left:5px;}
+        .type-house ul li{margin-left:-42px;padding-left:5px;}
+
+        .login-register{position:absolute;margin-top:20px;margin-left:92%;}
+        .login-register a{text-decoration: none;color:black;}
+    </style>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=u70A5pnNrRtRT1XAgwM5jL2YIVj1Gv97"></script>
+    <title>添加自定义覆盖物</title>
+</head>
+<body>
+<header>
+    <div><img src="img/logo-new.png"></div>
+    <div class="select-house">
+        <p>二手房</p>
+        <ul style="display:none">
+            <li>二手房</li>
+            <li>新房</li>
+            <li>租房</li>
+        </ul>
+    </div>
+    <div class="search-house">
+        <input type="text" placeholder="输入小区或地铁站开始找房">
+        <div>搜索</div>
+    </div>
+    <div class="price-house">
+        <p>售价</p>
+        <ul style="display:none">
+            <li>不限</li>
+            <li>100万以下</li>
+            <li>100-150万</li>
+            <li>150-200万</li>
+            <li>200-250万</li>
+            <li>250-300万</li>
+            <li>300-500万</li>
+            <li>500-1000万</li>
+            <li>1000万以上</li>
+        </ul>
+    </div>
+    <div class="size-house">
+        <p>面积</p>
+        <ul style="display:none">
+            <li>不限</li>
+            <li>60平以下</li>
+            <li>60-90平</li>
+            <li>90-110平</li>
+            <li>110-130平</li>
+            <li>130-150平</li>
+            <li>150-200平</li>
+            <li>200平以上</li>
+        </ul>
+    </div>
+    <div class="type-house">
+        <p>房型</p>
+        <ul style="display:none">
+            <li>不限</li>
+            <li>1室</li>
+            <li>2室</li>
+            <li>3室</li>
+            <li>4室</li>
+            <li>5室</li>
+            <li>5室以上</li>
+        </ul>
+    </div>
+
+
+    <div class="login-register">
+        <a href="#">注册</a>
+        <span>|</span>
+        <a href="#">登录</a>
+    </div>
+</header>
+<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var mp = new BMap.Map("allmap");
+    mp.centerAndZoom(new BMap.Point(118.7916845453,32.0638415471), 12);
+    mp.enableScrollWheelZoom();
+    // 复杂的自定义覆盖物
+    function ComplexCustomOverlay(point, text){
+        this._point = point;
+        this._text = text;
+    }
+    ComplexCustomOverlay.prototype = new BMap.Overlay();
+    ComplexCustomOverlay.prototype.initialize = function(map){
+        this._map = map;
+        var div = this._div = document.createElement("div");
+        div.style.position = "absolute";
+        div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+        div.style.backgroundColor = "#EE5D5B";
+//      div.style.border = "1px solid #BC3B3A";
+        div.style.color = "white";
+//      div.style.height = "18px";
+        div.style.width="100px";
+        div.style.height="100px";
+        div.style.borderRadius="50%";
+        div.style.padding = "2px";
+        div.style.lineHeight = "18px";
+        div.style.whiteSpace = "nowrap";
+        div.style.MozUserSelect = "none";
+        div.style.fontSize = "14px"
+        div.style.textAlign="center";
+        div.style.lineHeight="100px";
+
+        var span = this._span = document.createElement("span");
+        div.appendChild(span);
+        span.appendChild(document.createTextNode(this._text));
+
+        div.onmouseover = function(){
+            this.style.backgroundColor = "#6BADCA";
+            this.style.borderColor = "#0000ff";
+        }
+        div.onmouseout = function(){
+            this.style.backgroundColor = "#EE5D5B";
+            this.style.borderColor = "#BC3B3A";
+        }
+        mp.getPanes().labelPane.appendChild(div);
+
+        return div;
+    }
+    ComplexCustomOverlay.prototype.draw = function(){
+        var map = this._map;
+        var pixel = map.pointToOverlayPixel(this._point);
+        this._div.style.left = pixel.x + "px";
+        this._div.style.top  = pixel.y - 30 + "px";
+    }
+
+    var qixia = new ComplexCustomOverlay(new BMap.Point(118.8724738417,32.1545319197), "栖霞区");
+    var jianye = new ComplexCustomOverlay(new BMap.Point(118.713204,32.012333), "建邺区");
+    var gulou = new ComplexCustomOverlay(new BMap.Point(118.732176,32.082359), "鼓楼区");
+    var pukou = new ComplexCustomOverlay(new BMap.Point(118.545904,32.042701), "浦口区");
+    var xuanwu = new ComplexCustomOverlay(new BMap.Point(118.802891,32.091659), "玄武区");
+    var qinhuai= new ComplexCustomOverlay(new BMap.Point(118.789668,32.037314), "秦淮区");
+    var jiangning= new ComplexCustomOverlay(new BMap.Point(118.813814,31.947646), "江宁区");
+
+    mp.addOverlay(qixia);
+    mp.addOverlay(jianye);
+    mp.addOverlay(gulou);
+    mp.addOverlay(pukou);
+    mp.addOverlay(xuanwu);
+    mp.addOverlay(qinhuai);
+    mp.addOverlay(jiangning);
+
+
+</script>
