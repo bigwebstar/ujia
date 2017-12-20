@@ -1,0 +1,489 @@
+.filter a {
+  color: #394043;
+  float: left;
+  position: relative;
+  line-height: 27px;
+}
+.filter {
+  width: 1150px;
+  padding: 25px 14px;
+  margin: 0 auto;
+  margin-top: 26px;
+  background: #fbfbfb;
+  font-size: 12px;
+  position: relative;
+}
+.position ul {
+  overflow: hidden;
+}
+h2 {
+  font-size: 100%;
+}
+.position ul.position-nav li:first-child {
+  float: left;
+  width: 4.5%;
+  line-height: 27px;
+}
+.position ul.position-nav li:last-child {
+  float: right;
+  width: 95.5%;
+}
+a.selected {
+  color: #00ae66;
+}
+.position ul.position-nav li:last-child a {
+  display: inline-block;
+  margin-right: 30px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.position ul.position-nav li:last-child a span {
+  display: inline-block;
+  background: url(../img/second-sell/sprite.png) no-repeat -561px -185px;
+  width: 10px;
+  height: 5px;
+  margin-left: 9px;
+  vertical-align: 2px;
+}
+.position ul.position-nav li:last-child a:last-child span {
+  background-position: -571px -185px;
+}
+ul.position-content {
+  margin: 18px 0;
+  padding: 5px 0;
+  line-height: 27px;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+ul.position-content li:first-child {
+  display: block;
+  margin-left: 50px;
+}
+ul.position-content li a {
+  margin-right: 17px;
+}
+ul.position-content li:last-child {
+  display: none;
+  margin-left: 50px;
+}
+.list-more ul {
+  height: 27px;
+  overflow: hidden;
+  display: block;
+}
+.list-more ul li:first-child {
+  float: left;
+  width: 4.5%;
+  line-height: 27px;
+}
+.list-more ul li:last-child {
+  position: relative;
+  width: 87.9%;
+  padding-right: 7.6%;
+  float: right;
+}
+.list-more ul li:last-child a {
+  min-width: 130px;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 10px;
+  position: relative;
+}
+.list-more ul li:last-child a span {
+  display: inline-block;
+}
+.list-more ul li:last-child a span:first-child {
+  position: absolute;
+  background: url(../img/second-sell/sprite.png) no-repeat -535px -185px;
+  width: 12px;
+  height: 12px;
+  top: 7px;
+  left: 0;
+}
+.more-sel {
+  margin-top: 5px;
+  float: left;
+}
+.more-sel input {
+  width: 35px;
+  height: 18px;
+  text-align: center;
+  border: 1px solid #b7b7b7;
+}
+.more-sel span {
+  line-height: 20px;
+  margin: 0 5px;
+}
+.more-plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 27px;
+  color: #a7a8a9;
+}
+.list-more ul:last-child {
+  margin-top: 6px;
+}
+.list-more ul:last-child input {
+  width: 200px;
+  border: 1px solid #c8cfd2;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 8.5px;
+  color: #cacbcc;
+}
+.list-more ul:last-child button {
+  width: 68px;
+  line-height: 27px;
+  color: #fff;
+  background: #394043;
+  text-align: center;
+  margin-left: 10px;
+  border: 0;
+}
+.btn-more {
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #a7a8a9;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-more span {
+  display: inline-block;
+  vertical-align: 3px;
+  margin-left: 7px;
+  background: url(../img/second-sell/sprite.png) no-repeat -459px -169px;
+  width: 8px;
+  height: 4px;
+}
+.orderFilter {
+  margin: 0 auto;
+  margin-top: 26px;
+  line-height: 1;
+  width: 1150px;
+  overflow: visible;
+}
+.orderTag {
+  width: 1150px;
+  height: 48px;
+  border-bottom: 2px solid #00ae66;
+}
+.orderTag ul {
+  width: 89%;
+  display: inline-block;
+}
+.orderTag ul li {
+  display: inline-block;
+}
+.orderTag ul li a {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 25px;
+  font-size: 15px;
+  color: #394043;
+  text-decoration: none;
+  height: 47.5px;
+  line-height: 47px;
+}
+/*选中项后背景颜色和字体颜色*/
+.orderTag ul li.orderTag-selected {
+  background-color: #00ae66;
+}
+.orderTag ul li.orderTag-selected a {
+  color: #fff;
+}
+.orderTag .orderType {
+  width: 10%;
+  float: right;
+  text-align: right;
+  vertical-align: middle;
+  height: 47px;
+  padding-top: 10px;
+}
+/*大图模式*/
+.orderTag .orderType .img {
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+  background-image: url(../img/second-sell/sprite.png);
+  background-position: -494px -173px;
+  width: 12px;
+  height: 12px;
+}
+/*列表模式*/
+.list {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/second-sell/sprite.png);
+  background-position: -506px -173px;
+}
+.filterAgain {
+  font-size: 12px;
+}
+.filterAgain .title {
+  float: left;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 20px;
+  color: #333333;
+}
+.orderFilter .filterAgain ul {
+  margin-left: 15px;
+}
+.filterAgain ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.filterAgain ul li a {
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  color: #666666;
+}
+.filterAgain ul li a .checkbox {
+  display: inline-block;
+  background-image: url(../img/second-sell/sprite.png);
+  /*选中时候的背景图片位置*/
+  /*background-position: -578px -173px;*/
+  /*默认未选中时候背景图片的位置*/
+  background-position: -535px -185px;
+  width: 12px;
+  height: 12px;
+  vertical-align: -1px;
+  margin-right: 7px;
+}
+.filterAgain ul li a .info {
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+  vertical-align: -1px;
+}
+.info span {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-image: url(../img/second-sell/sprite.png);
+  background-position: -482px -173px;
+}
+.info .infoContent {
+  display: none;
+}
+.info:hover .infoContent {
+  width: 200px;
+  display: block;
+  position: absolute;
+  left: 4px;
+  bottom: 34px;
+  /*background-color: #999;*/
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 7px 18px;
+  line-height: 22px;
+}
+/*min-wid {*/
+/*width: 168px;*/
+/*}*/
+/*li.selected a .upArrow {*/
+/*width:10px;*/
+/*height:10px;*/
+/*display: inline-block;*/
+/*background-image: url(index_img/sprite.png);*/
+/*background-position:-460px -220px;;*/
+/*}*/
+.resultDes {
+  line-height: 55px;
+}
+.resultDes .total {
+  font-weight: bold;
+  font-size: 22px;
+  color: #394043;
+}
+.resultDes .total span {
+  color: #00ae66;
+}
+.ss-product {
+  margin-bottom: 30px;
+}
+.ss-product li {
+  position: relative;
+  box-sizing: content-box;
+  padding: 35px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+.details-left {
+  height: 232px;
+  height: 174px;
+  float: left;
+  font-size: 14px;
+}
+.details-left div:first-child {
+  font-weight: bold;
+  color: #394043;
+  height: 22px;
+  overflow: hidden;
+  line-height: 22px;
+}
+.details-left div:first-child a {
+  font-size: 22px;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  color: #394043;
+}
+.ss-product-details {
+  width: 840px;
+  height: 174px;
+  float: right;
+  color: #616669;
+}
+.ss-product-details a {
+  text-decoration: none;
+  color: #394043;
+}
+.details-left div:nth-child(2) {
+  margin-top: 20px;
+  line-height: 14px;
+}
+.details-left div:nth-child(2) p {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.details-left div:nth-child(2) span {
+  background: url(../img/second-sell/sprite.png);
+  background-position: -451px -199px;
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  display: inline-block;
+}
+.details-left div:nth-child(3) {
+  margin-top: 18px;
+  line-height: 16px;
+}
+.details-left div:nth-child(3) p {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.details-left div:nth-child(3) span {
+  background: url(../img/second-sell/sprite.png);
+  background-position: -593px -146px;
+  width: 13px;
+  height: 15px;
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: -1px;
+}
+.details-left div:nth-child(4) {
+  margin-top: 18px;
+  line-height: 14px;
+}
+.details-left div:nth-child(4) p {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.details-left div:nth-child(4) span {
+  background: url(../img/second-sell/sprite.png);
+  background-position: -579px -130px;
+  width: 15px;
+  height: 14px;
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: -1px;
+}
+.details-left div:nth-child(5) {
+  margin-top: 18px;
+}
+.details-left div:nth-child(5) span {
+  display: inline-block;
+  color: #849aae;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 0 11px;
+  margin-right: 6px;
+  background-color: #f4f7f9;
+}
+.details-left div:nth-child(5) .taxfree {
+  background: #ffece8;
+  color: #FF8062;
+}
+.details-left div:nth-child(5) .haskey {
+  background: #e1f5ed;
+  color: #33BE85;
+}
+.details-right {
+  width: 430px;
+  height: 174px;
+}
+.details-right div:first-child {
+  width: 200px;
+  margin-top: 30px;
+  float: left;
+  text-align: right;
+  font-weight: bold;
+}
+.details-right div:first-child p:first-child {
+  font-size: 24px;
+  color: #db4c3f;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.details-right div:last-child {
+  width: 130px;
+  font-size: 14px;
+  margin-top: 30px;
+  float: right;
+  text-align: center;
+}
+.details-right div:last-child p {
+  font-weight: bold;
+  font-size: 26px;
+  margin-right: 5px;
+  margin-bottom: 25px;
+  color: #db4c3f;
+}
+.details-right div:last-child p span {
+  color: #db4c3f;
+}
+.details-right div:last-child a {
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
+}
+.contentBottom {
+  width: 100%;
+  height: 90px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.contentBottom .page-box .on {
+  background-color: #394043;
+  color: #ffffff;
+}
+.contentBottom .page-box a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 30px;
+  padding: 0 12px;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+  color: #555;
+  background-color: #f5f5f5;
+}

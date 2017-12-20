@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>南京二手房_南京租房_南京房产网(南京U家网)</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/index.css">
+<!--     <link rel="stylesheet/less" href="css/login.less"> -->
+<!--     <script src="js/less.min.js"></script> -->
+</head>
+<body>
+<!--#include file="header.html" -->
+    <div class="main">
+    	<!--nav部分-->
+    	<div class="home-nav">
+	        <ul class="clear">
+	            <li class="hvr-bob lf">
+	                <a href="#">
+	                    <img src="img/nav/second.png">
+	                    <b>找二手房</b>
+	                    <p>真实二手房源，链家承诺真实在售所见即真</p>
+	                </a>
+	            </li>
+	            <li class="hvr-bob lf">
+	                <a href="">
+	                    <img src="img/nav/new.png">
+	                    <b>找新房</b>
+	                    <p>全新房屋，全新生活，给您满意的优质新盘</p>
+	                </a>
+	            </li>
+	            <li class="hvr-bob lf">
+	                <a href="">
+	                    <img src="img/nav/map.png">
+	                    <b>地图找房</b>
+	                    <p>为您精确定位，位置周边配套设施一览无余</p>
+	                </a>
+	            </li>
+	            <li class="hvr-bob lf">
+	                <a href="page404.html">
+	                    <img src="img/nav/eval.png">
+	                    <b>房屋估价</b>
+	                    <p>基于海量成交数据，帮您合理定价预估市值</p>
+	                </a>
+	            </li>
+        	</ul>
+    	</div>
+        <!--轮播图-->
+        <div class="silde-container">
+            <div>
+            <ul class="clear">
+                <li class="lf"><img src="img/slide/banner.png" alt="" width="1150px" height="400px"></li>
+                <li class="lf"><img src="img/slide/banner2.jpg" alt="" width="1150px" height="400px"></li>
+                <li class="lf"><img src="img/slide/banner3.jpg" alt="" width="1150px" height="400px"></li>
+                <li class="lf"><img src="img/slide/banner4.jpg" alt="" width="1150px" height="400px"></li>
+                <li class="lf"><img src="img/slide/banner.png" alt="" width="1140px" height="400px"></li>
+            </ul>
+            <a href="" class="silde-prev"><span><img src="img/slide/arrow-left.png " alt=""></span></a>
+            <a href="" class="silde-next"><span><img src="img/slide/arrow-right.png " alt=""></span></a>
+            <p>
+            </p>
+            </div>
+        </div>
+        <!--二手房楼层-->
+        <div class="second-hand">
+            <div class="top">
+                <div class="top-bg"></div>
+                <p>
+                    好房源那么多,我们为你精选,链家网会越来越懂你
+                    <a href="#">更多南京二手房</a>
+                </p>
+            </div>
+            <div class="clear"></div>
+            <ul class="wrapper-content">
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="wrap">-->
+                            <!--<img src="img/index/1.jpg" alt="">-->
+                            <!--<span>218万</span>-->
+                            <!--<div class="wrap-bottom">-->
+                                <!--<p>长小九中低总价两房 精装修</p>-->
+                                <!--<p>-->
+                                    <!--<span>石婆婆庵</span>-->
+                                    <!--<span>2室1厅</span>-->
+                                    <!--<span>40.29平米</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tips">-->
+                            <!--<p>-->
+                                <!--<span>近期关注度较高房源</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="wrap">-->
+                            <!--<img src="img/index/1.jpg" alt="">-->
+                            <!--<span>218万</span>-->
+                            <!--<div class="wrap-bottom">-->
+                                <!--<p>长小九中低总价两房 精装修</p>-->
+                                <!--<p>-->
+                                    <!--<span>石婆婆庵</span>-->
+                                    <!--<span>2室1厅</span>-->
+                                    <!--<span>40.29平米</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tips">-->
+                            <!--<p>-->
+                                <!--<span>近期关注度较高房源</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="wrap">-->
+                            <!--<img src="img/index/1.jpg" alt="">-->
+                            <!--<span>218万</span>-->
+                            <!--<div class="wrap-bottom">-->
+                                <!--<p>长小九中低总价两房 精装修</p>-->
+                                <!--<p>-->
+                                    <!--<span>石婆婆庵</span>-->
+                                    <!--<span>2室1厅</span>-->
+                                    <!--<span>40.29平米</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tips">-->
+                            <!--<p>-->
+                                <!--<span>近期关注度较高房源</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="wrap">-->
+                            <!--<img src="img/index/1.jpg" alt="">-->
+                            <!--<span>218万</span>-->
+                            <!--<div class="wrap-bottom">-->
+                                <!--<p>长小九中低总价两房 精装修</p>-->
+                                <!--<p>-->
+                                    <!--<span>石婆婆庵</span>-->
+                                    <!--<span>2室1厅</span>-->
+                                    <!--<span>40.29平米</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tips">-->
+                            <!--<p>-->
+                                <!--<span>近期关注度较高房源</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="wrap">-->
+                            <!--<img src="img/index/1.jpg" alt="">-->
+                            <!--<span>218万</span>-->
+                            <!--<div class="wrap-bottom">-->
+                                <!--<p>长小九中低总价两房 精装修</p>-->
+                                <!--<p>-->
+                                    <!--<span>石婆婆庵</span>-->
+                                    <!--<span>2室1厅</span>-->
+                                    <!--<span>40.29平米</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tips">-->
+                            <!--<p>-->
+                                <!--<span>近期关注度较高房源</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="wrap">-->
+                            <!--<img src="img/index/1.jpg" alt="">-->
+                            <!--<span>218万</span>-->
+                            <!--<div class="wrap-bottom">-->
+                                <!--<p>长小九中低总价两房 精装修</p>-->
+                                <!--<p>-->
+                                    <!--<span>石婆婆庵</span>-->
+                                    <!--<span>2室1厅</span>-->
+                                    <!--<span>40.29平米</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tips">-->
+                            <!--<p>-->
+                                <!--<span>近期关注度较高房源</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="wrap">-->
+                            <!--<img src="img/index/1.jpg" alt="">-->
+                            <!--<span>218万</span>-->
+                            <!--<div class="wrap-bottom">-->
+                                <!--<p>长小九中低总价两房 精装修</p>-->
+                                <!--<p>-->
+                                    <!--<span>石婆婆庵</span>-->
+                                    <!--<span>2室1厅</span>-->
+                                    <!--<span>40.29平米</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tips">-->
+                            <!--<p>-->
+                                <!--<span>近期关注度较高房源</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">-->
+                        <!--<div class="wrap">-->
+                            <!--<img src="img/index/1.jpg" alt="">-->
+                            <!--<span>218万</span>-->
+                            <!--<div class="wrap-bottom">-->
+                                <!--<p>长小九中低总价两房 精装修</p>-->
+                                <!--<p>-->
+                                    <!--<span>石婆婆庵</span>-->
+                                    <!--<span>2室1厅</span>-->
+                                    <!--<span>40.29平米</span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tips">-->
+                            <!--<p>-->
+                                <!--<span>近期关注度较高房源</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+        <!--小区楼层-->
+        <div class="floor2-list" >
+            <div class="wrapper main">
+                <div class="f1 lf floor2-nav">
+                    <div class="floor2-name"></div>
+                    <span>纵览小区，恋上这座城</span>
+                    <a href="#" class="rt">更多南京城市</a>
+                </div>
+                <div class="ul-container">
+                    <ul class="floor2-item">
+                        <!--<li class="lf">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<div class="img-container">-->
+                                    <!--<img src="img/index/floor2.jpg" alt="江岸水城">-->
+                                <!--</div>-->
+                                <!--<div class="title">-->
+                                    <!--<div class="item-name">江岸水城</div>-->
+                                    <!--<div class="item-desc">-->
+                                        <!--<span>20195元/平</span>-->
+                                        <!--<span class="item-year">2006年建</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="lf">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<div class="img-container">-->
+                                    <!--<img src="img/index/floor2.jpg" alt="江岸水城">-->
+                                <!--</div>-->
+                                <!--<div class="title">-->
+                                    <!--<div class="item-name">江岸水城</div>-->
+                                    <!--<div class="item-desc">-->
+                                        <!--<span>20195元/平</span>-->
+                                        <!--<span class="item-year">2006年建</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="lf">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<div class="img-container">-->
+                                    <!--<img src="img/index/floor2.jpg" alt="江岸水城">-->
+                                <!--</div>-->
+                                <!--<div class="title">-->
+                                    <!--<div class="item-name">江岸水城</div>-->
+                                    <!--<div class="item-desc">-->
+                                        <!--<span>20195元/平</span>-->
+                                        <!--<span class="item-year">2006年建</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="lf">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<div class="img-container">-->
+                                    <!--<img src="img/index/floor2.jpg" alt="江岸水城">-->
+                                <!--</div>-->
+                                <!--<div class="title">-->
+                                    <!--<div class="item-name">江岸水城</div>-->
+                                    <!--<div class="item-desc">-->
+                                        <!--<span>20195元/平</span>-->
+                                        <!--<span class="item-year">2006年建</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="lf">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<div class="img-container">-->
+                                    <!--<img src="img/index/floor2.jpg" alt="江岸水城">-->
+                                <!--</div>-->
+                                <!--<div class="title">-->
+                                    <!--<div class="item-name">江岸水城</div>-->
+                                    <!--<div class="item-desc">-->
+                                        <!--<span>20195元/平</span>-->
+                                        <!--<span class="item-year">2006年建</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li class="lf">-->
+                            <!--<a href="#" target="_blank">-->
+                                <!--<div class="img-container">-->
+                                    <!--<img src="img/index/floor2.jpg" alt="江岸水城">-->
+                                <!--</div>-->
+                                <!--<div class="title">-->
+                                    <!--<div class="item-name">江岸水城</div>-->
+                                    <!--<div class="item-desc">-->
+                                        <!--<span>20195元/平</span>-->
+                                        <!--<span class="item-year">2006年建</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="main">
+        <!--新房楼层-->
+        <div class="new-house">
+            <div class="nh-title"></div>
+            <div class="nh-subtitle">
+                <p>真实信息准确同步，楼盘动态一手掌握
+                    <a href="#" class="rt">更多南京新房</a>
+                </p>
+
+            </div>
+            <ul class="floor3-item" id="">
+                <!--<li><a href="#">-->
+                    <!--<div>花样年喜年中心-->
+                        <!--<p>-->
+                            <!--<label>23000</label>元/平-->
+                        <!--</p>-->
+                    <!--</div></a>-->
+                <!--</li>-->
+                <!--<li><a href="#">-->
+                    <!--<div>花样年喜年中心-->
+                        <!--<p>-->
+                            <!--<label>23000</label>元/平-->
+                        <!--</p>-->
+                    <!--</div></a>-->
+                <!--</li>-->
+                <!--<li><a href="#">-->
+                    <!--<div>花样年喜年中心-->
+                        <!--<p>-->
+                            <!--<label>23000</label>元/平-->
+                        <!--</p>-->
+                    <!--</div></a>-->
+                <!--</li>-->
+                <!--<li><a href="#">-->
+                    <!--<div>花样年喜年中心-->
+                        <!--<p>-->
+                            <!--<label>23000</label>元/平-->
+                        <!--</p>-->
+                    <!--</div></a>-->
+                <!--</li>-->
+                <!--<li><a href="#">-->
+                    <!--<div>花样年喜年中心-->
+                        <!--<p>-->
+                            <!--<label>23000</label>元/平-->
+                        <!--</p>-->
+                    <!--</div></a>-->
+                <!--</li>-->
+                <!--<li><a href="#">-->
+                    <!--<div>花样年喜年中心-->
+                        <!--<p>-->
+                            <!--<label>23000</label>元/平-->
+                        <!--</p>-->
+                    <!--</div></a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="h-truth">
+        <div class="warp">
+            <div class="lf">
+                <div class="truth-txt"></div>
+            </div>
+            <div class="truth">
+                <p>
+                    真实存在，真实在售，真实价格，真实图片！<br>
+                    链家郑重向用户承诺：真实房源，假一赔百元！
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="aside">
+        <div></div>
+        <ul>
+            <li><span></span><div>二手好房</div></li>
+            <li><span></span><div>优选租房</div></li>
+            <li><span></span><div>新房精选</div></li>
+            <li><span></span><div>返回顶部</div></li>
+        </ul>
+    </div>
+    <div class="loginContainer">
+        <!--遮罩层-->
+        <div class="overlay_bg" style="display: none;"></div>
+        <!--用户登录-->
+        <div class="panel_login animated btn-login bounceIn" style="display: none;" id="dialog">
+            <div class="panel_info">
+                <i class="close_login">×</i>
+                <div class="panel_tab">
+                    <div class="title">
+                        <div class="fl">欢迎登录U家</div>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="con_login_user">
+                        <form method="post">
+                            <ul>
+                                <li class="item border-t username">
+                                    <input id="txtName" name="uname" type="text" class="input_def topSpecial" placeholder="请输入用户名">
+                                </li>
+                                <li class="item border-t userpwd">
+                                    <input id="txtPwd" name="upwd" type="password" class="input_def topSpecial" placeholder="请输入密码">
+                                    <em class="password-view"></em>
+                                </li>
+                                <li class="item checkVerimg">
+                                    <input type="text" id="yzm" class="input_def ver-img" placeholder="请输入验证码">
+                                    <img src="data/03_code_gg.php" id="setYzm" title="看不清换一张" class="verImg">
+                                </li>
+                                <li class="log-show-err">
+                                    <dd></dd>
+                                </li>
+                                <li class="noCode">
+                                    <label class="checkbox-btn">
+                                        <span class="active">
+                                            <input type="checkbox" name="remember" value="1" class="mind-login" checked>
+                                        </span>
+                                        7天内免密登录
+                                    </label>
+                                </li>
+                                <li class="li_btn">
+                                    <a class="btn-login" id="btnLogin">登录</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="registered"></div>
+        </div>
+        <!--用户注册-->
+        <div class="panel_login animated btn-login bounceIn" style="display: none;" id="dialog_reg">
+            <div class="panel_info">
+                <i class="close_login">×</i>
+                <div class="panel_tab">
+                    <div class="title">
+                        <div class="lf">欢迎注册U家</div>
+                        <div class="rt register_text">
+                            <span>已有账号？</span>
+                            <a href="javascript:;" class="reg_log">去登录</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="con_reg_user">
+                        <form method="post">
+                            <ul>
+                                <li class="item border-t username">
+                                    <input id="tName" name="uname" type="text" class="input_def topSpecial" autofocus placeholder="请输入用户名至少3位,中文+字母+数字_">
+                                </li>
+                                <li class="item border-t userpwd">
+                                    <input id="tPwd" name="upwd" type="password" class="input_def topSpecial" placeholder="请输入密码至少8位，数字+字母">
+                                </li>
+                                <li class="item border-t userpwd">
+                                    <input id="cPwd" name="upwd" type="password" class="input_def topSpecial" placeholder="请再次输入密码">
+                                </li>
+                                <li class="item border-t userpwd">
+                                    <input id="phone" name="phone" type="text" class="input_def topSpecial" placeholder="请输入手机号">
+                                </li>
+                                <li class="show-err">
+                                    <dd></dd>
+                                </li>
+                                <li class="noCode">
+                                    <label class="checkbox-btn">
+                                        <span class="active">
+                                            <input type="checkbox" name="remember" value="1" class="mind-login" checked>
+                                        </span>
+                                        我已阅读并同意
+                                        <a href="javascript:;" class="protocol">《U家用户使用协议》</a>
+                                    </label>
+                                </li>
+                                <li class="li_btn">
+                                    <a class="btn-login" id="btnReg">注册</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="registered"></div>
+        </div>
+    </div>
+<!--#include file="footer.html" -->
+<!--#include file="foot_ad.html" -->
+    <script src="js/jquery-3.2.1.js "></script>
+    <script src="js/lianjia.js "></script>
+    <script src="js/lift.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

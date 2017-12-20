@@ -1,0 +1,477 @@
+a {
+  color: #394043;
+}
+.home-nav {
+  width: 1150px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.home-nav .hvr-bob {
+  width: 25%;
+}
+.home-nav .hvr-bob > a {
+  display: block;
+}
+.home-nav .hvr-bob > a > img {
+  width: 76px;
+  height: 65px;
+  margin: 0 auto 17px auto;
+  display: block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.home-nav .hvr-bob > a > b {
+  font-size: 18px;
+  color: #394043;
+  font-weight: 400;
+  font-style: normal;
+}
+.home-nav .hvr-bob > a > p {
+  width: 183px;
+  margin: 3px auto 5px auto;
+  font-size: 12px;
+  color: #b0b3b4;
+  line-height: 18px;
+}
+@keyframes moves {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+.home-nav li.hvr-bob:hover img {
+  animation: moves 1s linear infinite;
+}
+div.silde-container > div > ul {
+  width: 5900px;
+  position: relative;
+}
+div.silde-container {
+  overflow: hidden;
+  position: relative;
+}
+div.silde-container > div > p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 60px;
+}
+div.silde-container > div > p > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 20px;
+}
+div.silde-container > div > p {
+  opacity: 0.6;
+}
+div.silde-container > div > p:hover {
+  opacity: 1;
+}
+div.silde-container > div > p > span.active {
+  background: #31708f ;
+}
+div.silde-container > div > a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 40px;
+  background: #ddd;
+  text-align: center;
+}
+div.silde-container > div > a.silde-prev {
+  left: 20px;
+  opacity: 0.6;
+}
+div.silde-container > div > a > span {
+  display: block;
+  margin-top: 10px;
+}
+div.silde-container > div > a.silde-next {
+  right: 20px;
+  opacity: 0.6;
+}
+div.silde-container > div > a:hover {
+  opacity: 1;
+}
+.second-hand {
+  overflow: hidden;
+  position: relative;
+  padding: 50px 0 15px;
+  width: 1150px;
+  margin: 0 auto;
+}
+a {
+  color: #394043;
+}
+.top .top-bg {
+  background: url(../img/index/spriteV2_new.png) no-repeat -19px -94px;
+  width: 248px;
+  height: 30px;
+}
+.top p:nth-child(2) {
+  color: #888;
+  margin-top: 10px;
+}
+.top p:nth-child(2) a {
+  color: #394043;
+  float: right;
+}
+.top p:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+.wrapper-content {
+  margin-top: 40px;
+}
+.wrapper-content > li {
+  position: relative;
+  width: 250px;
+  height: 323px;
+  float: left;
+  border-radius: 2px;
+  margin-bottom: 3px;
+}
+.wrapper-content > li {
+  margin-right: 50px;
+}
+.wrapper-content > li:nth-child(4n) {
+  margin-right: 0;
+}
+.wrapper-content > li a {
+  display: block;
+}
+.wrapper-content > li a div.wrap {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.wrapper-content > li a div.wrap img {
+  width: 250px;
+  height: 192px;
+  border: 0;
+}
+.wrapper-content > li a div.wrap > span {
+  position: absolute;
+  padding: 0 8px;
+  border-radius: 1px;
+  height: 30px;
+  background: #394043;
+  font-size: 18px;
+  text-align: center;
+  top: 150px;
+  left: 0;
+  line-height: 30px;
+  color: #fff;
+}
+.wrap .wrap-bottom {
+  width: 250px;
+  height: 72px;
+  background: #fff;
+}
+.wrap .wrap-bottom p:first-child {
+  font-size: 16px;
+  color: #394043;
+  height: 30px;
+  padding: 10px 18px 0;
+  overflow: hidden;
+}
+.wrap .wrap-bottom p:last-child {
+  color: #999;
+  font-size: 12px;
+  padding: 0 18px;
+  overflow: hidden;
+  height: 45px;
+  line-height: 45px;
+}
+.wrap .wrap-bottom p:last-child span {
+  margin-right: 8px;
+  color: #999;
+  font-size: 12px;
+  line-height: 15px;
+}
+div.tips {
+  height: 45px;
+  line-height: 45px;
+  padding-right: 5px;
+}
+div.tips p {
+  color: #aaa;
+  font-size: 12px;
+  float: left;
+  overflow: hidden;
+  width: 244px;
+}
+div.tips p span {
+  margin-right: 8px;
+  color: #aaa;
+  font-size: 12px;
+}
+.floor2-list {
+  position: relative;
+  height: 807px;
+  padding-top: 50px;
+  background: #eeeef1;
+  overflow: hidden;
+}
+.wrapper {
+  position: absolute;
+  width: 1150px;
+}
+.floor2-nav {
+  width: 1150px;
+  margin-bottom: 40px;
+  color: #888;
+}
+.floor2-nav a {
+  display: block;
+  color: #394043;
+}
+.floor2-nav a:hover {
+  text-decoration: underline;
+}
+.floor2-name {
+  background-image: url(../img/index/xiaoqu-recom.png);
+  width: 187px;
+  height: 28px;
+  margin-bottom: 10px;
+  background-size: 100%;
+}
+.ul-container li {
+  width: 350px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  background: #f9f9f9;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.ul-container li:nth-child(3) {
+  margin-right: 0px;
+}
+.ul-container li:nth-child(6) {
+  margin-right: 0px;
+}
+.img-container {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+.floor2-list img {
+  width: 350px;
+  height: 200px;
+  transition: all 0.7s ease-in-out;
+}
+.floor2-list img:hover {
+  width: 359px;
+  height: 206px;
+}
+.title {
+  width: 350px;
+  height: 84px;
+  background: #fff;
+  position: relative;
+  padding: 0 20px;
+}
+.item-name {
+  color: #394043;
+  font-size: 19px;
+  font-weight: bold;
+  padding-top: 20px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.item-desc {
+  color: #394043;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+}
+.item-desc span:nth-child(2) {
+  display: block;
+  float: right;
+}
+.new-house {
+  width: 100%;
+  height: 807px;
+  padding-top: 50px;
+}
+.nh-title {
+  width: 158px;
+  height: 30px;
+  background-image: url("../img/index/spriteV2_new.png");
+  background-position: -20px -56px;
+}
+.nh-subtitle {
+  width: 1140px;
+  margin-top: 10px;
+  color: #888;
+  margin-bottom: 25px;
+}
+.new-house ul li div {
+  width: 100%;
+  height: 260px;
+  padding-top: 90px;
+  text-align: center;
+  position: absolute;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.new-house ul li p {
+  color: #fff2ab;
+  font-size: 17px;
+  margin-top: 1px;
+  text-align: center;
+  font-weight: normal;
+}
+.new-house ul li label {
+  font-size: 20px;
+  font-weight: 700;
+}
+.new-house ul li {
+  width: 350px;
+  height: 260px;
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+}
+.new-house ul li a {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 260px;
+  overflow: hidden;
+}
+.new-house ul li a img {
+  width: 350px;
+  height: 260px;
+  transition: all 0.7s ease-in-out;
+}
+.new-house ul li a .notes {
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  bottom: 25px;
+  width: 350px;
+  font-weight: 700;
+  height: 260px;
+  left: 50%;
+  top: 14%;
+  margin-left: -175px;
+  text-align: center;
+  margin-top: -35px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.new-house ul li a:hover img {
+  width: 355px;
+  height: 265px;
+}
+.new-house ul li:nth-child(2) {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.new-house ul li:nth-child(5) {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.new-house ul li {
+  float: left;
+}
+#aside {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 155px;
+  display: none;
+}
+#aside > div {
+  position: absolute;
+  width: 10px;
+  height: 155px;
+  background: #7a6e6e;
+  left: 0;
+}
+#aside > ul {
+  position: absolute;
+  width: 34px;
+  height: 155px;
+  right: 0;
+  top: 0;
+}
+#aside > ul > li {
+  width: 34px;
+  height: 35px;
+  margin-bottom: 5px ;
+  position: relative;
+  background: #7a6e6e;
+  border-radius: 0 5px 5px 0;
+}
+#aside > ul > li > span {
+  width: 34px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/index/toolbars.png);
+}
+#aside > ul > li:nth-child(1) > span {
+  background-position: -190px -100px;
+}
+#aside > ul > li:nth-child(2) > span {
+  background-position: -50px -50px;
+}
+#aside > ul > li:nth-child(3) > span {
+  background-position: -50px -100px;
+}
+#aside > ul > li:nth-child(4) > span {
+  background-position: -50px -250px;
+}
+#aside > ul > li > div {
+  width: 0;
+  height: 35px;
+  background: #c81623;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 35px;
+  color: #fff;
+  position: absolute;
+  right: -100px;
+  overflow: hidden;
+  animation: ss 2s infinite;
+  font-family: "微软雅黑";
+  border-radius: 0 5px 5px 0;
+}
+#aside > ul > li:hover div {
+  width: 100px;
+}
+#aside > ul > li:hover {
+  background: #c81623;
+  border-radius: 0 0 0 0 ;
+}
+@keyframes ss {
+  0% {
+    transform: translatex(10px);
+  }
+  50% {
+    transform: translatex(20px);
+  }
+  100% {
+    transform: translatex(10px);
+  }
+}
+#aside > ul > li.active {
+  background: #c81623;
+}

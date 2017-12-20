@@ -1,0 +1,231 @@
+.loginContainer{position: relative;z-index: 10008;}
+input,textarea,button{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  resize: none;
+}
+//遮罩层样式
+.overlay_bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: .6;
+  top:0;
+  left: 0;
+  z-index: 1003;
+}
+//动画效果
+.animated{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.bounceIn{
+  animation-name: bounceIn;
+}
+@keyframes bounceIn {
+  0%{
+     opacity: 0;
+    transform:scale(.3);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+//用户登录
+.loginContainer .panel_login{
+  width: 380px;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -190px;
+  margin-top: -205px;
+  padding-left: 40px;
+  z-index: 10000;
+  border-radius: 2px;
+  box-shadow: 1px 3px 14px rgba(0,0,0,.3);
+}
+.panel_info{
+  padding-top: 40px;
+  width: 300px;
+}
+.loginContainer .panel_login .panel_info .close_login{
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top:15px;
+  padding: 4px;
+  font-style: normal;
+  font-size: 16px;
+}
+//标题
+.loginContainer .panel_login .panel_tab .title {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  padding-left: 0px;
+  width: 300px;
+}
+.loginContainer .panel_login .panel_tab .title .lf,
+.loginContainer .panel_login .panel_tab .title .fl{
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+.loginContainer .panel_login .panel_tab .title .rt{
+  color: #999;
+  line-height: 28px;
+}
+.loginContainer .panel_login .panel_tab .title .rt a{
+  color: #00ae66;
+}
+.loginContainer .panel_login .panel_tab .title .rt a:hover{
+  text-decoration: underline;
+}
+//用户名 密码  验证码 公共样式
+.loginContainer .panel_login .panel_tab li{
+  color: #555;
+  clear: both;
+  height: 52px;
+  position: relative;
+}
+.loginContainer .panel_login .panel_tab li.username,
+.loginContainer .panel_login .panel_tab li.userpwd{
+  background-color: #fff;
+}
+.loginContainer .border-t{
+  border-radius: 2px 2px 0 0 ;
+  border: 1px solid #dbdbdb;
+}
+.loginContainer .panel_login .panel_tab li input{
+  padding:0;
+  border: 0;
+}
+.loginContainer .panel_login .panel_tab li input.topSpecial{
+  border-radius:3px 3px 0 0;
+}
+.loginContainer .panel_login .panel_tab li input.input_def{
+    width: 242px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 16px;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+}
+.loginContainer .panel_login .panel_tab li input.success{
+  color: #00ae66;
+}
+.loginContainer .password-view{
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  background-image:url(../img/basic/view.png) ;
+  cursor: pointer;
+}
+//验证码
+.loginContainer .panel_login .panel_tab li.checkVerimg{
+  margin-top :-1px;
+  padding: 0;
+  border: 1px solid #dbdbdb;
+  display: none;
+}
+.loginContainer .panel_login .panel_tab li.checkVerimg .ver-img{
+  width: 151px;
+  line-height: 50px;
+  height: 50px;
+  float:left;
+}
+.loginContainer .panel_login .panel_tab li.checkVerimg .verImg{
+  float: right;
+  height: 50px;
+  width:125px;
+  border: 0;
+  position: absolute;
+  right: -1px;
+  vertical-align: top;
+}
+//错误提示
+.loginContainer .panel_login .panel_tab li.show-err,
+.loginContainer .panel_login .panel_tab li.log-show-err{
+  padding:24px 0 0 ;
+  height: 14px;
+  line-height: 14px;
+  display: none;
+}
+.loginContainer .panel_login .panel_tab .show-err dd,
+.loginContainer .panel_login .panel_tab .log-show-err dd{
+  top:0;
+  display: block;
+  color: #db4c3f;
+}
+.loginContainer .panel_login .panel_tab li.show-suc dd{
+   color: #00ae66;
+ }
+//7天免密登录
+.loginContainer .panel_login .panel_tab li.noCode{
+  height: 18px;
+  line-height: 18px;
+  padding: 24px 0;
+}
+.loginContainer .panel_login .panel_tab li.protocol{
+  color:#00ae66;
+  float: none;
+}
+.loginContainer .panel_login .panel_tab li.noCode label span{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #dbdbdb;
+  border-radius:2px;
+  position: relative;
+  margin-right:6px ;
+  float: left;
+}
+.loginContainer .panel_login .panel_tab li .mind-login{
+  float: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  opacity: 0;
+}
+.loginContainer .active{
+  background-image:url(img/basic/checked.png);
+  background-size: 12px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+//登录按钮
+.loginContainer .panel_login .panel_tab li .btn-login{
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+  background: #39ac6a;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+}
+.loginContainer .registered{
+  width: 380px;
+  text-align: right;
+  color: #555;
+  padding: 10px 0 25px 0;
+  margin-top: 5px;
+}
