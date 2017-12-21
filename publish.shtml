@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    	<link rel="stylesheet" href="css/basic.css">
+    	<link rel="stylesheet" href="css/publish.css">
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/publish.js"></script>
+	</head>
+	<body>
+		<!--#include file="product-header.html" -->
+		<div class="header">
+	        <div class="wrap">
+	            <a href="#" class="logo"></a>
+	            <div class="nav">
+	                <ul>
+	                    <li><a href="publish.shtml" class="active">我要卖房</a></li>
+	                    <li><a href="publish-rent.shtml">我要出租</a></li>
+	                </ul>
+	            </div>
+	        </div>
+    	</div>
+    	<div class="m-jumbotron">
+	        <div class="title">
+	            发布出售房源
+	        </div>
+	        <div class="sub-title">
+	            8000+全国链家门店·10万+全国经纪人·链家倾情服务15年+
+	        </div>
+    	</div>
+    	<div class="main">
+        	<form class="main-form">
+	            <ul>
+	                <li>小区所在城市</li>
+	                <li>南京</li>
+	            </ul>
+	            <ul>
+	                <li>小区</li>
+	                <li>
+	                    <div>
+	                        <input type="text" name="area" placeholder="请输入小区名">
+	                        <!--后台加载数据-->
+	                        <ul style="">
+	                            <li>
+	                                <span>福建路</span>
+	                                <span>三牌楼 鼓楼</span>
+	                            </li>
+	                            <li>
+	                               <span>福建路</span>
+	                                <span>鼓楼</span>
+	                            </li>
+	                            <li>
+	                                <span>福建新村</span>
+	                                <span>三牌楼 鼓楼</span>
+	                            </li>
+	                            <li>
+	                               <span>方家营(甜水湾小区)</span>
+	                                <span>建宁路 鼓楼</span>
+	                            </li>
+	                            <li>
+	                                <span>钟阜大厦</span>
+	                                <span>三牌楼 鼓楼</span>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                </li>
+	            </ul>
+	            <ul>
+	                <li>房屋地址</li>
+	                <li>
+	                    <input type="text" name="building_No" placeholder="楼栋号"><span>/</span>
+						<input type="text" name="unit_No" placeholder="单元号"><span>/</span>
+						<input type="text" name="door_No" placeholder="门牌号">
+	                </li>
+	            </ul>
+	            <ul>
+	                <li>期望售价</li>
+	                <li>
+	                    <input type="text" name="price" placeholder="请输入您期望出租的价格">
+	                    <span>元/月</span>
+	                </li>
+	            </ul>
+	            <ul>
+	                <li>称呼</li>
+	                <li>
+	                    <input type="text" name="uname" placeholder="我们应该如何称呼您">
+	                </li>
+	            </ul>
+	            <ul>
+	                <li>手机号码</li>
+	                <li>
+	                    <input type="text" name="phone" placeholder="您的联系方式,方便我们及时与您联系">
+	                </li>
+	            </ul>
+	            <input type="button" id="btn1" value="完善信息">
+        	</form>
+		</div>
+		<div class="m-process">
+		<div class="hd">卖房全流程</div>
+		<ul class="bd">
+			<li>
+				<span class="icon">1</span>
+				<div class="tit">发布房源</div>
+				<div class="sub-tit">在线上免费发布房源</div>
+			</li>
+			<li>
+				<span class="icon icon-2">2</span>
+				<div class="tit">核对房源</div>
+				<div class="sub-tit">30分钟内链家客服联系</div>
+			</li>
+			<li>
+				<span class="icon icon-3">3</span>
+				<div class="tit">在线销售</div>
+				<div class="sub-tit">在链家APP移动管理销售</div>
+			</li>
+			<li>
+				<span class="icon icon-4">4</span>
+				<div class="tit">签约出售</div>
+				<div class="sub-tit">签约过户链家全程服务</div>
+			</li>
+		</ul>
+	</div>
+		<div class="publish-details">
+			<form action="#" class="form-details">
+				<p>继续完善您的信息</p>
+				<ul>
+					<li><span>标题:</span>
+						<input type="text" name="title" placeholder="请输入标题">
+					</li>
+					<li><span>副标题:</span>
+						<input type="text" name="subtitle" placeholder="请输入副标题">
+					</li>
+					<li><span>面积:</span>
+						<input type="text" name="space" placeholder="请输入房屋面积">
+						<span>平方米</span>
+					</li>
+					<li><span>室厅厨房卫生间:</span>
+						<select name="house_room">
+							<option>--请选择--</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<span>室</span>
+						<select name="house_hall">
+							<option>--请选择--</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+						</select>
+						<span>厅</span>
+						<select name="house_kitchen">
+							<option>--请选择--</option>
+							<option value="0">无</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+						<span>厨</span>
+						<select name="house_tollet">
+							<option>--请选择--</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<span>卫</span>
+					</li>
+					<li><span>房屋朝向:</span>
+						<select name="side">
+							<option>--请选择--</option>
+							<option value="1">南</option>
+							<option value="2">北</option>
+						</select>
+					</li>
+					<li><span>有无电梯:</span>
+						<select name="is_lift">
+							<option>--请选择--</option>
+							<option value="1">有电梯</option>
+							<option value="2">无电梯</option>
+						</select>
+					</li>
+					<li><span>装修情况:</span>
+						<select name="decoration">
+							<option>--请选择--</option>
+							<option value="1">简装</option>
+							<option value="2">精装</option>
+							<option value="3">毛坯</option>
+							<option value="4">其他</option>
+						</select>
+					</li>
+					<li><span>所在楼层:</span>
+						<select name="floor">
+							<option>--请选择--</option>
+							<option value="1">低楼层</option>
+							<option value="2">中楼层</option>
+							<option value="3">高楼层</option>
+						</select>
+						<span>(共</span>
+						<input type="text" name="floor_num">
+						<span>层)</span>
+					</li>
+					<li><span>建筑类型:</span>
+						<select name="building_type">
+							<option>--请选择--</option>
+							<option value="1">板楼</option>
+							<option value="2">塔楼</option>
+							<option value="3">板塔结构</option>
+							<option value="4">别墅</option>
+						</select>
+					</li>
+					<li><span>梯户比例:</span>
+						<select name="ladder_ratio">
+							<option>--请选择--</option>
+							<option value="1">一梯两户</option>
+							<option value="2">一梯三户</option>
+							<option value="3">别墅</option>
+						</select>
+					</li>
+					<li><span>产权年限:</span>
+						<input type="text" name="property_year"><span>年</span>
+					</li>
+					<li><span>新房/二手房:</span>
+						<select name="house_type">
+							<option>--请选择--</option>
+							<option value="1">新房</option>
+							<option value="2">二手房</option>
+						</select>
+					</li>
+					<li>
+						<span>上传图片:</span>
+						<input type="text" readonly value="" id="up-routes">
+						<input type="button" value="..." id="upload">
+						<input type="button" value="上传" id="up-btn">
+						<input type="file" id="img-upload">
+					</li>
+					<li>
+						<input type="button" class="details-submit" id="submit-btn" value="提交委托">
+						<input type="button" class="details-submit" id="cancel-btn" value="取消">
+					</li>
+				</ul>
+			</form>
+		</div>
+		<!--#include file="footer.html" -->
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>头部</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <div class="header" style="background-position-y: 0px;">
+        <div class="wrapper main">
+            <div class="lf">
+                <a href="#" target="_self" class="logo">
+                    <h1 class="header_h1">U家网</h1>
+                </a>
+                <span class="exchange">
+                    <i></i>
+                    南京
+                </span>
+            </div>
+            <div class="change-city animated" style="display: none;"></div>
+            <div class="rt">
+                <div class="nav">
+                    <ul>
+                        <li><a href="second-sell.shtml">二手房</a></li>
+                        <li><a href="new_house_index.shtml">新房</a></li>
+                        <li><a href="publish-sell.shtml">租房</a></li>
+                        <li><a href="404.html">小区</a></li>
+                        <li><a href="404.html">经纪人</a></li>
+                        <li><a href="tool.html">工具</a></li>
+                        <li><a href="market.shtml">房价</a></li>
+                        <li><a href="publish.shtml">业主</a></li>
+                    </ul>
+                    <div class="show-user" id="loginList" >
+                        <i></i>
+                        <div class="welcome">
+                            <a href="javascript:;" class="btn-login" data-log="login">
+                                <span class="log">登录</span>
+                            </a>
+                            <a href="javascript:;" class="btn-register" data-log="reg">
+                                <span class="reg">立即注册</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="show-user show-out" id="welcomeList">
+                        <div class="welcome">
+                            <a href="#" class="btn-login">
+                                <span class="log" id="username"></span>
+                            </a>
+                            <a href="#" class="btn-register">
+                                <span class="reg" id="logout">退出</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="header-wrap">
+                <div class="wrap-ico"></div>
+                <div class="house-num">
+                    <ul id="advs">
+                        <li>北京链家在售新房楼盘451个</li>
+                        <li>北京链家真实租房9290套</li>
+                        <li>北京链家真实在售二手房276447套</li>
+                        <li>北京链家在售新房楼盘451个</li>
+                        <li>北京链家真实租房9290套</li>
+                        <li>北京链家真实在售二手房276447套</li>
+                    </ul>
+                </div>
+                <!--搜索框-->
+                <div class="search-box-wrap">
+                    <div class="search-box-con">
+                        <div class="menu">
+                            <ul id="list">
+                                <li class="checked" data-href="second-hand-house"><span>找二手房</span></li>
+                                <li data-href="new-house"><span>找新房</span></li>
+                                <li data-href="renting"><span>找租房</span></li>
+                                <li data-href="question"><span>搜问答</span></li>
+                            </ul>
+                            <i></i>
+                        </div>
+                        <div class="search clear">
+                            <div class="box">
+                                <form>
+                                    <input type="text" class="text lf" placeholder="请输入楼盘名称开始找房" name="keyword" id="keyword-box">
+                                    <input type="button" id="findHouse" class="btn" value="开始找房">
+                                </form>
+                            </div>
+                            <div class="tips" style="display: block;overflow: hidden">
+                                <ul style="display:none" id="second-hand-house">
+                                    <li class="hot-name">二手房热门搜索</li>
+                                    <div class="list">
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                    </div>
+                                </ul>
+                                <ul style="display:none" id="new-house">
+                                    <li class="hot-name">新房热门搜索</li>
+                                    <div class="list">
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                    </div>
+                                </ul>
+                                <ul style="display:none" id="renting">
+                                    <li class="hot-name">出租房热门搜索</li>
+                                    <div class="list">
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                    </div>
+                                </ul>
+                                <ul style="display:none" id="question">
+                                    <li class="hot-name">问答热门搜索</li>
+                                    <div class="list">
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                        <li><a href="#">新龙城</a></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap-video">
+                <div class="open">
+                    <a href="#">
+                        <img src="img/images/header/php3X11MP.png">
+                        关于仿冒我公司进行不正当竞争行为的郑重声明
+                    </a>
+                </div>
+                <div class="open">
+                    <a href="#">
+                        <img src="img/images/header/phpAPdvEm.png">
+                        房地产中介诚信服务承诺及保证书
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

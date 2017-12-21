@@ -1,0 +1,250 @@
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+img{
+    vertical-align:middle;
+}
+.after:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.rf{
+    float:right;
+}
+.lf{
+    float:left;
+}
+
+.header{
+    width:100%;
+    height:240px;
+    background:#F5F5F6;
+}
+.toolHeader{
+    width:1150px;
+    height:240px;
+    margin:0 auto;
+    padding-top:30px;
+    padding-bottom:77px;
+}
+.toolHeader .logoRow{
+    width:100%;
+    height:32px;
+    line-height:32px;
+}
+.toolHeader .logoRow .toolLogo{
+    width:221px;
+    height:32px;
+    background:url("../img/images/spriteLine2.png");
+    background-position:0 0;
+    float:left;
+}
+.toolHeader .logoRow .appLink{
+    width:107px;
+    height:27px;
+    float:right;
+    margin-top:6px;
+    font-size:14px;
+}
+.toolHeader .logoRow .appLink .appIcon{
+    width:14px;
+    height:18px;
+    vertical-align:middle;
+    display:inline-block;
+    margin-right:5px;
+    background-image:url("../img/images/spriteLine2.png");
+    background-position:-36px -32px;
+}
+/************* 标题 **********************/
+.toolHeader .toolTitle{
+    width:100%;
+    height:78px;
+    margin-top:23px;
+    text-align:center;
+}
+.toolHeader .toolTitle .mainTitle{
+    width:100%;
+    height:41px;
+    margin:0;
+    padding:0;
+    font-size:33px;
+    font-weight:700;
+    color:#333;
+    font-family: Hiragino Sans GB,Microsoft Yahei UI,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,Segoe UI,Tahoma,"\5B8B\4F53 b8b\4F53",SimSun,sans-serif;
+}
+.toolHeader .toolTitle .subTitle{
+    width:100%;
+    font-size:16px;
+    color:#878787;
+    margin-top:16px;
+}
+/***************************** 主体部分 ****************************/
+.mainContainer{
+    width:990px;
+    /*height:797px;*/
+    height:958px;
+    margin:0 auto;
+    margin-top:50px;
+    color:#333;
+    font-family:Hiragino Sans GB,Microsoft Yahei UI,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,Segoe UI,Tahoma,"\5B8B\4F53  b8b\4F53",SimSun,sans-serif;
+    position:relative;
+}
+/*************   导航栏   *************/
+.mainContainer .toolTag{
+    width:100%;
+    height:59px;
+    border-bottom:2px solid #333;
+    position:absolute;
+}
+.mainContainer .toolTag>li{
+    display:inline-block;
+    text-align:center;
+    height:56px;
+    line-height:57px;
+    margin-bottom:1px;
+}
+/*.mainContainer .toolTag>li:hover{*/
+    /*background:#F5F5F6;*/
+/*}*/
+/*.li_hover{background:#F5F5F6;}*/
+.li_on{
+    background-color: #394043;
+}
+.a_on{
+    color:#fff;
+}
+ .toolTag>li:not(first-child) a{
+    height:57px;
+    font-size:20px;
+    padding:0 30px;
+}
+ /*.a_off{*/
+     /*height:57px;*/
+     /*color:#333;*/
+     /*font-size:20px;*/
+     /*padding:0 30px;*/
+ /*}*/
+ .toolTag>li a:hover{
+    text-decoration:none;
+}
+/********* 房源信息 *************/
+.mainContainer .appContainer{
+    width:100%;
+    max-height:600px;
+    position:absolute;
+    top:50px;
+}
+.mainContainer .appContainer .toolContent{
+    position:absolute;
+    margin:40px 0;
+}
+#tabs2,#tabs3,#tabs4{display:none}
+/*测试*/
+#tabs1{width:100%;height:600px;background:green;}
+#tabs2{width:100%;height:500px;background:yellow;}
+#tabs4{width:100%;height:300px;}
+
+/*********** 左边 ****************/
+.mainContainer .appContainer .toolContent .toolLeft{
+    width:600px;
+    float:left;
+    position:relative;
+}
+.question1{position:absolute;width:100%;}
+.qTitle1{width:100%;height:28px;}
+.qTitle1 span:first-child{color:#333;font-size:22px;line-height:28px;font-weight:700;}
+.qTitle1 span:last-child{font-size:12px;color:#b0b3b4;margin-left:10px;}
+.answer{margin-top:25px;}
+.choice{line-height: 52px;padding-left: 45px;position: relative;border-radius: 2px;font-size: 14px;color: #333;cursor: pointer;}
+.choice span:first-child{position:absolute;left: 17px;top: 19px;background:url("../img/images/spriteLine2.png");background-position: -51px -32px;width: 14px;height: 14px;}
+.choice:hover .c1{background:url("../img/images/spriteLine2.png");background-position: -64px -32px;}
+.prevBtn{margin-top:40px;}
+.prevBtn input{width:122px;height: 39px;border-radius: 2px;background-color: #f5f5f6;color: #888c8e;font-size: 14px;font-weight: 700;cursor: pointer;border:0;outline:none;}
+.prevBtn2{margin-top:40px;}
+.prevBtn2 input{width:122px;height: 39px;border-radius: 2px;background-color: #f5f5f6;color: #888c8e;font-size: 14px;font-weight: 700;cursor: pointer;border:0;outline:none;}
+.dd1 span{font-size:30px;font-weight:700;color:#394043;}
+.dd2{margin-top:15px;font-size:20px;color:#394043}
+.dd2 span:first-child{font-size:20px;color:#394043;}
+.dd2 span:last-child{cursor:pointer;color:#4285f4;margin-left:18px;}
+.dd3{margin-top: 35px;border-bottom: 1px solid #eee;border-top: 1px solid #eee;padding: 26px 0;}
+.dd3 div{float: left;max-width:100%;font-size:14px;line-height:32px;margin-right: 20px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.dd3 div span:first-child{font-weight:700;color:#333;}
+.dd3:after{clear:both;display:table;content:"";}
+.dd4{margin:22px 0;font-size:12px;color:#aaa;line-height:20px;}
+.toolLeft >div{display:none;}
+/*-64px -32px位置*/
+/******* 计算右边 *******/
+.mainContainer .appContainer .toolContent .toolRight{
+    float:right;
+}
+.toolRight{
+    float:right;
+    width:340px;
+}
+.toolRight .Q{border:2px solid #00ae66;position:relative;border-radius: 2px;}
+.Q1{padding: 0 22px;background-color: #00ae66;position: relative;}
+.Q1 span:first-child{ line-height: 52px;font-size: 14px;font-weight: 700;color: #fff;}
+.Q1 span:last-child{margin-left:120px;height: 12px;font-size: 12px;color: #c7e2d1;}
+.A{display: block;background-color: #f7fcfa;padding: 30px 22px;}
+.Q2:before{display:table;content:""}
+.Q2:after{clear:both;display:table;content:""}
+.Q2 span:first-child{float:left;background-image: url("../img/images/spriteLine2.png");background-position: -18px -32px;width: 18px;height: 18px;}
+.Q2 span:last-child{float: right;width: 262px;font-size: 12px;color: #333;line-height: 20px;}
+.Q3{margin-top:17px;}
+.Q3:before{display:table;content:""}
+.Q3:after{clear:both;display:table;content:""}
+.Q3 span:first-child{float: left;background-image: url("../img/images/spriteLine2.png");background-position: 0 -32px;width: 18px;height: 18px;}
+.Q3 span:last-child{ float: right;width: 262px;font-size: 12px;color: #00ae66;line-height: 20px;}
+/*.Q div:last-child{  position: absolute;z-index: -1;left: 0;right: 0;width: 311px;height: 50px;margin: 0 auto;bottom: -8px;border: 2px solid #00ae66;background-color: #f7fcfa;border-radius: 2px;}*/
+.toolRight >div:last-child{font-size:12px;width:311px;height:12px;border: 2px solid #00ae66;z-index:-1;margin:-5px auto;}
+/*.toolRight div:last-child:before{display:table;content:""}*/
+/*.toolRight div:last-child:after{clear:both;display:table;content:""}*/
+/************ 斜线 ***************/
+.mainContainer .line{
+    width:100%;
+    height:7px;
+    background:url("../img/images/spliteLine1.png") repeat-x;
+    position: absolute;
+    bottom:245px;
+}
+
+/**************  结尾部分  ****************/
+.toolInfomation{
+    position:absolute;
+    bottom:0;
+}
+.toolInfo{
+    width:100%;
+    height:220px;
+    margin-top:50px;
+}
+.toolInfo .toolItem{
+    width:430px;
+    height:220px;
+    float:left;
+    padding-right:60px;
+}
+.toolInfo .toolItem .toolInfoTitle{
+    width:100%;
+    height:30px;
+    margin-bottom:16px;
+    font-weight:700;
+    line-height:30px;
+    border-bottom:1px solid #f5f5f6;
+}
+.toolInfo .toolItem .toolInfoTitle>li{
+    width:100%;
+    height:25px;
+    line-height:25px;
+}
+.toolInfo .toolItem li a{
+    width:100%;
+    height:25px;
+    line-height:25px;
+    font-size:12px;
+}

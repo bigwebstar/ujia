@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/second-sell.css">
+</head>
+<body>
+<div class="header-2">
+    <div id="lianjia-search" class="main">
+        <div class="lf clear">
+            <span class="lf"></span>
+            <a href="second-sell.shtml" class="lf" id="onSale">在售</a>
+            <a href="second-sell-already.shtml" class="lf" id='deal'>成交</a>
+            <a href="404.html" class="lf">小区</a>
+            <a href="market.shtml" class="lf" id="housePrice">房价</a>
+            <a href="map_search.html" class="lf">地图找房</a>
+        </div>
+        <div class="lf"><i></i>
+            下载链家APP
+            <p>
+                <img src="img/product-header/getDownloadQr.png "  width="124px" alt=""><br>
+                <strong>使用链家APP</strong><br>
+                <span>随时随地查看掌上房源</span>
+            </p>
+        </div>
+        <div class="lf">
+            <input type="text" placeholder="请输入区域,商圈或小区开始找房">
+            <button><span></span></button>
+            <div style="position:absolute;z-index:10">
+                <ul>
+                    <li><a href="">热门搜索</a></li>
+                    <li><a href="">鼓楼</a></li>
+                    <li><a href="">育才公寓</a></li>
+                    <li><a href="">万科光明东方名苑</a></li>
+                    <li><a href="">翠岛花城</a></li>
+                    <li><a href="">云锦</a></li>
+                    <li><a href="">1号线</a></li>
+                    <li><a href="">10号线</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+	var str = location.href;
+	var i = str.lastIndexOf("/");
+	var path = str.slice(i+1);
+	if(path == "second-sell.shtml"){
+		$("#onSale").css("color","#00A75B");
+	}else if(path == "second-sell-already.shtml"){
+		$("#deal").css("color","#00A75B");
+	}else if(path == "market.shtml"){
+		$("#housePrice").css("color","#00A75B");
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,691 @@
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+.after:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.rf{
+    float:right;
+}
+.lf{
+    float:left;
+}
+
+.header{
+    width:100%;
+    height:240px;
+    background:#F5F5F6;
+}
+.toolHeader{
+    width:1150px;
+    height:240px;
+    margin:0 auto;
+    padding-top:30px;
+    padding-bottom:77px;
+}
+.toolHeader .logoRow{
+    width:100%;
+    height:32px;
+    line-height:32px;
+}
+.toolHeader .logoRow .toolLogo{
+    width:221px;
+    height:32px;
+    background:url("../img/images/spriteLine2.png");
+    background-position:0 0;
+    float:left;
+}
+.toolHeader .logoRow .appLink{
+    width:107px;
+    height:27px;
+    float:right;
+    margin-top:6px;
+    font-size:14px;
+}
+.toolHeader .logoRow .appLink .appIcon{
+    width:14px;
+    height:18px;
+    vertical-align:middle;
+    display:inline-block;
+    margin-right:5px;
+    background-image:url("../img/images/spriteLine2.png");
+    background-position:-36px -32px;
+}
+/************* 标题 **********************/
+.toolHeader .toolTitle{
+    width:100%;
+    height:78px;
+    margin-top:23px;
+    text-align:center;
+}
+.toolHeader .toolTitle .mainTitle{
+    width:100%;
+    height:41px;
+    margin:0;
+    padding:0;
+    font-size:33px;
+    font-weight:700;
+    color:#333;
+    font-family: Hiragino Sans GB,Microsoft Yahei UI,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,Segoe UI,Tahoma,"\5B8B\4F53 b8b\4F53",SimSun,sans-serif;
+}
+.toolHeader .toolTitle .subTitle{
+    width:100%;
+    font-size:16px;
+    color:#878787;
+    margin-top:16px;
+}
+/***************************** 主体部分 ****************************/
+.mainContainer{
+    width:990px;
+    /*height:797px;*/
+    height:958px;
+    margin:0 auto;
+    margin-top:50px;
+    color:#333;
+    font-family:Hiragino Sans GB,Microsoft Yahei UI,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,Segoe UI,Tahoma,"\5B8B\4F53  b8b\4F53",SimSun,sans-serif;
+    position:relative;
+}
+/*************   导航栏   *************/
+.mainContainer .toolTag{
+    width:100%;
+    height:60px;
+    border-bottom:2px solid #333;
+    position:absolute;
+}
+.mainContainer .toolTag>li{
+    display:inline-block;
+    text-align:center;
+    height:56px;
+    line-height:57px;
+    margin-bottom:1px;
+}
+/*.mainContainer .toolTag>li:hover{*/
+    /*background:#F5F5F6;*/
+/*}*/
+/*.li_hover{background:#F5F5F6;}*/
+.li_on{
+    background-color: #394043;
+}
+.a_on{
+    color:#fff;
+}
+ .toolTag>li:not(first-child) a{
+    height:57px;
+    font-size:20px;
+    padding:0 30px;
+}
+ /*.a_off{*/
+     /*height:57px;*/
+     /*color:#333;*/
+     /*font-size:20px;*/
+     /*padding:0 30px;*/
+ /*}*/
+ .toolTag>li a:hover{
+    text-decoration:none;
+}
+/********* 房源信息 *************/
+.mainContainer .appContainer{
+    width:100%;
+    max-height:600px;
+    position:absolute;
+    top:50px;
+}
+.mainContainer .appContainer .toolContent{
+    position:absolute;
+    margin:40px 0;
+}
+#tabs2,#tabs3,#tabs4{display:none}
+/*测试*/
+#tabs1{width:100%;height:600px;}
+#tabs2{width:100%;height:400px;}
+/************************************************************************/
+
+/********* 房源信息 *************/
+.mainContainer .appContainer{
+    width:100%;
+}
+.mainContainer .appContainer .toolContent{
+    width:990px;	
+}
+/*********** 左边 ****************/
+.mainContainer .appContainer .toolContent .toolLeft{
+    width:600px;
+    float:left;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item{
+    width:100%;
+    height:46px;
+    border-radius:2px;
+    margin-bottom:20px;
+    display:inline-block;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item label{
+    display:inline-block;
+    width:122px;
+    height:46px;
+    line-height:46px;
+    box-sizing:border-box;
+    float:left;
+    font-weight:600;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item div{
+    display:inline-block;
+    width:478px;
+    height:46px;
+    line-height:46px;
+    box-sizing:border-box;
+    position:relative;
+    border-bottom:1px solid #f5f5f6;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .bg{
+    background:#f5f5f6;
+    position:relative;
+}
+/********** 下拉 ***********/
+.mainContainer .appContainer .toolContent .toolLeft .item .bg .option{
+    width:100%;
+    position:absolute;
+    top:46px;
+    z-index:1;
+    box-sizing:border-box;
+    border:1px solid #d6d6d6;
+    display:none;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .bg .option li{
+    width:100%;
+    background:#fff;
+    box-sizing:border-box;
+    padding-left:15px;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .bg2{
+    background:#f5f5f6;
+    position:relative;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .bg2 .option{
+    width:100%;
+    position:absolute;
+    top:46px;
+    z-index:1;
+    box-sizing:border-box;
+    border:1px solid #d6d6d6;
+    display:none;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .bg2 .option li{
+    width:100%;
+    background:#fff;
+    box-sizing:border-box;
+    padding-left:15px;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .bg2 .option li:hover{
+    background:#f5f5f6;
+}
+.show{
+    display:block !important;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .bg .option li:hover{
+    background:#f5f5f6;
+}
+/********** 结束下拉 ***********
+********************************/
+
+
+.mainContainer .appContainer .toolContent .toolLeft .item .lei{
+    width:478px;
+    height:46px;
+    box-sizing:border-box;
+    line-height:46px;
+    padding-left:15px;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .icon{
+    width:5px;
+    height:7px;
+    background:url("../img/images/spriteLine2.png") no-repeat right center;
+    background-position:-90px -32px;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item>div>input{
+    padding:15px;
+    width:348px;
+    border:none;
+    border-bottom:1px solid #f5f5f6;
+    outline:0;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item>div>span{
+    position:absolute;
+    right:0;
+}
+.mainContainer .appContainer .toolContent .toolLeft .btn{
+    display:inline-block;
+    width:100%;
+    height:53px;
+    margin-top:35px;
+    text-align:center;
+    line-height:53px;
+}
+.mainContainer .appContainer .toolContent .toolLeft .btn button{
+    width:202px;
+    height:53px;
+    box-sizing:border-box;
+    border:none;
+    font-size:18px;
+    font-weight:700;
+    color:#fff;
+    border-radius:2px;
+    background:#00AC65;
+}
+/******* 计算右边 *******/
+.mainContainer .appContainer .toolContent .toolRight{
+    float:right;
+}
+.toolRight{
+    float:right;
+    width:340px;
+}
+.toolRight .resultPanel{
+    border:2px solid #333;
+    border-radius:2px;
+}
+.toolRight .resultPanel .panelTitle{
+    width:100%;
+    box-sizing:border-box;
+    padding:0 28px;
+    background:#333;
+}.toolRight .resultPanel .panelTitle li{
+     display:inline-block;
+     line-height:52px;
+     color:#fff;
+     font-size:14px;
+     font-weight:700;
+ }
+.toolRight .resultPanel .panelTitle .taxType{
+    width:60%;
+}
+.toolRight .resultPanel .panelBody{
+    padding:28px;
+}
+.toolRight .resultPanel .panelBody li{
+    width:100%;
+    margin:20px 0;
+}
+.toolRight .resultPanel .panelBody li div{
+    display:inline-block;
+    font-size:14px;
+    font-weight:700;
+    line-height:0;
+    box-sizing:border-box;
+}
+.toolRight .resultPanel .panelBody li .taxTypeItem{
+    width:60%;
+}
+.toolRight .resultPanel .panelBody li .taxInfoItem{
+    color:#ff7200;
+}
+.toolRight .resultPanel .panelBody li:first-child{
+    margin:0;
+}
+.toolRight .resultPanel .panelBody li:last-child{
+    margin:0;
+}
+.toolRight .toolRightInfo{
+    color:#999;
+    font-size:12px;
+    margin-top:23px;
+}
+
+
+/************************************************************************/
+
+#tabs4{width:100%;height:300px;}
+
+/*********** 左边 ****************/
+.mainContainer .appContainer .toolContent .toolLeft{
+    width:600px;
+    float:left;
+    position:relative;
+}
+.question1{position:absolute;width:100%;}
+.qTitle1{width:100%;height:28px;}
+.qTitle1 span:first-child{color:#333;font-size:22px;line-height:28px;font-weight:700;}
+.qTitle1 span:last-child{font-size:12px;color:#b0b3b4;margin-left:10px;}
+.answer{margin-top:25px;}
+.choice{line-height: 52px;padding-left: 45px;position: relative;border-radius: 2px;font-size: 14px;color: #333;cursor: pointer;}
+.choice span:first-child{position:absolute;left: 17px;top: 19px;background:url("../img/images/spriteLine2.png");background-position: -51px -32px;width: 14px;height: 14px;}
+.choice:hover .c1{background:url("../img/images/spriteLine2.png");background-position: -64px -32px;}
+.prevBtn{margin-top:40px;}
+.prevBtn input{width:122px;height: 39px;border-radius: 2px;background-color: #f5f5f6;color: #888c8e;font-size: 14px;font-weight: 700;cursor: pointer;border:0;outline:none;}
+.prevBtn2{margin-top:40px;}
+.prevBtn2 input{width:122px;height: 39px;border-radius: 2px;background-color: #f5f5f6;color: #888c8e;font-size: 14px;font-weight: 700;cursor: pointer;border:0;outline:none;}
+.dd1 span{font-size:30px;font-weight:700;color:#394043;}
+.dd2{margin-top:15px;font-size:20px;color:#394043}
+.dd2 span:first-child{font-size:20px;color:#394043;}
+.dd2 span:last-child{cursor:pointer;color:#4285f4;margin-left:18px;}
+.dd3{margin-top: 35px;border-bottom: 1px solid #eee;border-top: 1px solid #eee;padding: 26px 0;}
+.dd3 div{float: left;max-width:100%;font-size:14px;line-height:32px;margin-right: 20px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.dd3 div span:first-child{font-weight:700;color:#333;}
+.dd3:after{clear:both;display:table;content:"";}
+.dd4{margin:22px 0;font-size:12px;color:#aaa;line-height:20px;}
+.toolLeft >div{display:none;}
+/*-64px -32px位置*/
+/******* 计算右边 *******/
+.mainContainer .appContainer .toolContent .toolRight{
+    float:right;
+}
+.toolRight{
+    float:right;
+    width:340px;
+}
+.toolRight .Q{border:2px solid #00ae66;position:relative;border-radius: 2px;}
+.Q1{padding: 0 22px;background-color: #00ae66;position: relative;}
+.Q1 span:first-child{ line-height: 52px;font-size: 14px;font-weight: 700;color: #fff;}
+.Q1 span:last-child{margin-left:120px;height: 12px;font-size: 12px;color: #c7e2d1;}
+.A{display: block;background-color: #f7fcfa;padding: 30px 22px;}
+.Q2:before{display:table;content:""}
+.Q2:after{clear:both;display:table;content:""}
+.Q2 span:first-child{float:left;background-image: url("../img/images/spriteLine2.png");background-position: -18px -32px;width: 18px;height: 18px;}
+.Q2 span:last-child{float: right;width: 262px;font-size: 12px;color: #333;line-height: 20px;}
+.Q3{margin-top:17px;}
+.Q3:before{display:table;content:""}
+.Q3:after{clear:both;display:table;content:""}
+.Q3 span:first-child{float: left;background-image: url("../img/images/spriteLine2.png");background-position: 0 -32px;width: 18px;height: 18px;}
+.Q3 span:last-child{ float: right;width: 262px;font-size: 12px;color: #00ae66;line-height: 20px;}
+/*.Q div:last-child{  position: absolute;z-index: -1;left: 0;right: 0;width: 311px;height: 50px;margin: 0 auto;bottom: -8px;border: 2px solid #00ae66;background-color: #f7fcfa;border-radius: 2px;}*/
+.toolRight >div:last-child{font-size:12px;width:311px;height:12px;border: 2px solid #00ae66;z-index:-1;margin:-5px auto;}
+
+/*.toolRight div:last-child:before{display:table;content:""}*/
+/*.toolRight div:last-child:after{clear:both;display:table;content:""}*/
+/************ 斜线 ***************/
+.mainContainer .line{
+    width:100%;
+    height:7px;
+    background:url("../img/images/spliteLine1.png") repeat-x;
+    position: absolute;
+    bottom:245px;
+}
+
+/**************  结尾部分  ****************/
+.toolInfomation{
+    position:absolute;
+    bottom:0;
+}
+.toolInfo{
+    width:100%;
+    height:220px;
+    margin-top:50px;
+}
+.toolInfo .toolItem{
+    width:430px;
+    height:220px;
+    float:left;
+    padding-right:60px;
+}
+.toolInfo .toolItem .toolInfoTitle{
+    width:100%;
+    height:30px;
+    margin-bottom:16px;
+    font-weight:700;
+    line-height:30px;
+    border-bottom:1px solid #f5f5f6;
+}
+.toolInfo .toolItem .toolInfoTitle>li{
+    width:100%;
+    height:25px;
+    line-height:25px;
+}
+.toolInfo .toolItem li a{
+    width:100%;
+    height:25px;
+    line-height:25px;
+    font-size:12px;
+}
+
+
+.mainContainer .appContainer .toolContent .toolLeft .item .lei{
+    /*width:435px;*/
+    width:474px;
+    height:46px;
+
+    box-sizing:border-box;
+    line-height:46px;
+    padding-left:15px;
+}
+.mainContainer .appContainer .toolContent .toolLeft .item .icon{
+    width:5px;
+    height:7px;
+    background:url("../img/images/spriteLine2.png") no-repeat right center;
+    background-position:-90px -32px;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+
+
+
+/*贷款总额行*/
+.total-loan  .total{
+    outline:none;
+    padding: 15px;
+    line-height: 1.2;
+    border: 0;
+    width: 80%;
+}
+.inputUnit{
+    float: right;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+}
+/*年利率行*/
+.item .item-rate{
+    background-color: #ffffff;
+}
+.item.item-rate #item-span{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    border-radius: 2px;
+    position: relative;
+    padding: 15px;
+    line-height: 1.2;
+    background-color: #f5f5f6;
+    width: 200px;
+    float: left;
+}
+#item-span .lei{
+    line-height: 1.2;
+    font-size: 14px;
+    color: #333;
+}
+#item-span + div{
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #f5f5f6;
+    width: 210px;
+    float: right;
+}
+#item-span + div input{
+    outline:none;
+    padding: 15px;
+    box-sizing:border-box;
+    line-height: 1.2;
+    border: 0;
+    width: 80%;
+}
+
+.mainContainer .appContainer .toolContent .toolLeft .item>div>span{
+    position:absolute;
+    right:0;
+}
+.mainContainer .appContainer .toolContent .toolLeft .btn{
+    display:inline-block;
+    width:100%;
+    height:53px;
+    margin-top:35px;
+    text-align:center;
+    line-height:53px;
+}
+.mainContainer .appContainer .toolContent .toolLeft .btn button{
+    width:202px;
+    height:53px;
+    box-sizing:border-box;
+    border:none;
+    font-size:18px;
+    font-weight:700;
+    color:#fff;
+    border-radius:2px;
+    background:#00AC65;
+}
+
+/*********************************************下拉菜单开始*******************************************/
+.toolLeft .item  ul.pull-down{
+    display:none;
+    position:absolute;
+    top:46px;
+    /*right:43px;*/
+    right:0;
+    z-index: 1;
+    /*width: 435px;*/
+    width:477px;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    background-color: #fff;
+    line-height: 1.2;
+    color: #333;
+    font-size: 14px;
+}
+
+.toolLeft .item .pull-down li{
+    padding: 15px;
+    margin: 0;
+}
+/*********************************基准利率**************/
+#short{
+    width:198px;
+    left:0px;
+}
+.toolLeft .item .pull-down li.hover{
+    background-color: #f5f5f6;
+}
+
+
+/*********************************************下拉菜单结束*******************************************/
+
+
+/******* 计算右边 *******/
+.toolRight{
+    float:right;
+}
+.resultPanel {
+    width: 340px;
+    box-sizing: border-box;
+    border: 2px solid #394043;
+    border-radius: 2px;
+    line-height: 1;
+}
+.panelTitle{
+    background-color: #394043;
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 0;
+}
+.panelTitle .repanmentType{
+    width: 20%;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    color: #fff;
+    line-height: 52px;
+}
+.elp {
+
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 52px;
+}
+.elp{
+    width: 41.42857143%;
+    text-align: right;
+    display: inline-block;
+}
+.epp {
+
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 52px;
+}
+.epp{
+    width: 38.57142857%;
+    text-align: right;
+    display: inline-block;
+}
+.panelBody {
+    padding: 28px;
+    box-sizing: border-box;
+    line-height: 1;
+}
+.resultItem:first-child {
+    margin-top: 0;
+}
+.resultItem {
+    margin: 20px 0;
+}
+.resultItem:last-child {
+    margin-bottom: 0;
+}
+.panelBody .resultItem .typeItem{
+    vertical-align: top;
+    color: #333;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+}
+.eppItem{
+    vertical-align: top;
+    font-size: 12px;
+    color: #333;
+    width: 37.428571%;
+    text-align: right;
+    display: inline-block;
+}
+.elpItem{
+    vertical-align: top;
+    font-size: 12px;
+    color: #333;
+    width: 38.428571%;
+    text-align: right;
+    display: inline-block;
+}
+.itemNum {
+    color: #ff7326;
+    padding-right: 6px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.eppMonthReduce{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: -7px;
+    font-size: 12px;
+    color: #d4d4d4;
+    text-align: right;
+}
+.reduceNum{
+    color: #999;
+    padding: 0 4px;
+}
+
+

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=u70A5pnNrRtRT1XAgwM5jL2YIVj1Gv97"></script>
+    <title>地图找房</title>
+    <link rel="stylesheet" href="css/map_search.css">
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<!-- 朝伟 -->
+<div class="header-clear">
+    <div class="header-logo">
+        <a href="#"><img src="img/map/logo-new.png" title="链家网"> </a>
+    </div>
+    <div class="header-search">
+
+        <p>二手房</p>
+
+        <ul class="item">
+            <a href="#"><li>二手房</li></a>
+            <a href="#"><li>租房</li></a>
+            <a href="#"><li>新房</li></a>
+        </ul>
+        <div class="sanjiao"></div>
+    </div>
+    <div class="input-search">
+        <input type="text" placeholder="输入小区或者地铁站开始找房" >
+        <div class="logo-search">
+            <button title="搜索">搜索</button>
+        </div>
+    </div>
+    <div class="house-price item2" title="售价">
+        <div class="h-price">
+        <p>售价</p>
+        </div>
+        <div class="house-price-search item3">
+        <ul id="p-house-price-search" >
+            <li class="first-child">不限</li>
+            <li>100万以下</li>
+            <li>100-150万</li>
+            <li>150-200万</li>
+            <li>200-250万</li>
+            <li>250-300万</li>
+            <li>300-500万</li>
+            <li>500-1000万</li>
+            <li>1000万以上</li>
+        </ul>
+    </div>
+        <div class="house-price-sanjiao"></div>
+    </div>
+
+
+        <div class="house-area item2" title="面积">
+            <div class="h-area">
+            <p >面积</p>
+            </div>
+            <div class="house-area-search item3">
+                <ul>
+                    <li class="first-child">不限</li>
+                    <li>60平</li>
+                    <li>60-90平</li>
+                    <li>90-110平</li>
+                    <li>110-130平</li>
+                    <li>130-150平</li>
+                    <li>150-200平</li>
+                    <li>200平以上</li>
+
+                </ul>
+            </div>
+            <div class="house-area-sanjiao"></div>
+    </div>
+
+
+        <div class="house-type item2" title="房型">
+            <div class="h-type">
+            <p >房型</p>
+            </div>
+            <div class="house-type-search item3">
+                <ul>
+                    <li class="first-child">不限</li>
+                    <li>一室</li>
+                    <li>二室</li>
+                    <li>三室</li>
+                    <li>四室</li>
+                    <li>五室</li>
+                    <li>五室以上</li>
+                </ul>
+            </div>
+            <div class="house-type-sanjiao"></div>
+        </div>
+    </div>
+
+    <div class="more"  >
+
+        <p title="更多">更多</p>
+        <div class="more-search-sanjiao"></div>
+        <div class="more-search">
+            <span title="朝向">朝向 </span>
+                <div class="more-search-aspect item5" >
+                    <div class="h-more" >
+                    <p>不限</p>
+                    </div>
+                    <div class="more-search-aspect-sanjiao "></div>
+                <ul >
+                    <li class="first-child">不限</li>
+                    <li>朝东</li>
+                    <li>朝南</li>
+                    <li>朝西</li>
+                    <li>朝北</li>
+                    <li>南北</li>
+                </ul>
+                </div>
+
+
+                <div class="floor item5">
+                <span title="楼龄">楼龄</span>
+                <div class="floor-age" >
+                    <div class="h-age">
+                    <p >5年以内</p >
+                    </div>
+                    <div class="floor-age-sanjiao"></div>
+                <ul >
+                    <li class="first-child ">不限</li>
+                    <li>5年以内</li>
+                    <li>10年以内</li>
+                    <li>10-20年</li>
+                    <li>20年以上</li>
+                </ul>
+                    <div class="floor-age-sanjiao"></div>
+                </div>
+                </div>
+
+                <div class="floor-serach-plan">
+                    <span title="楼层">楼层</span>
+                    <div class="floor-plan item5" >
+                     <div class="h-plan">
+                        <p>不限</p>
+                     </div>
+                        <div class="floor-plan-sanjiao"></div>
+                        <ul >
+                            <li class="first-child ">不限</li>
+                            <li>低楼层</li>
+                            <li>中楼层</li>
+                            <li>高楼层</li>
+                        </ul>
+
+                    </div>
+            </div>
+
+
+            <div class="else">
+            <span title="其他">其他 </span>
+                <div class="floor-else item5" >
+                    <div class="h-else">
+                    <p>不限</p>
+                    </div>
+                    <div class="floor-else-sanjiao"></div>
+                <ul >
+                    <li class="first-child">不限</li>
+                    <li>新上</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <div class="clear" title="清除全部条件">
+            <img src="img/map/clear.png" >
+            <span>清除全部条件</span>
+            </div>
+    <div class="header-login" title="登陆">
+        <a href=""><span >登陆</span></a>
+    </div>
+    <div class="shuxian">
+        <span></span>
+    </div>
+    <div class="header-register" title="注册">
+        <a href="#"><span >注册</span></a>
+    </div>
+</div>
+<!-- 	魏婷		 -->
+    <div class="detail" id="houseList">
+        <div class="r-list">
+            <div class="r-main">
+                <!--房源数量-->
+                <div class="r-hd">为您找到<span class="r-hd_i">14750</span>套房源</div>
+                <!--南京-->
+                <div class="r-hd1">
+                    <div class="r-hd1-content">
+                        <ul class="i-card i-card-1">
+                            <li class="i-card-name">南京市</li>
+                            <li class="i-card-price">
+                                <i style="color: #aaa;">参考均价 </i>
+                                <span>29686</span>元/m²
+                            </li>
+                            <li>共11个区域</li>
+                            <li class="i-card-radio">
+                                城市均价，同比上月<i class="i-card-up" style="">↑</i>0.55%
+                            </li>
+                        </ul>
+                    </div>
+                    <!--坐标位置图标-->
+                    <div class="r-hd1-bg">
+                        <div class="r-hd1-cycle">
+                            <div></div>
+                        </div>
+                        <div class="r-hd1-triangle"></div>
+                    </div>
+                </div>
+
+                <!--商品表-->
+                <div class="r-container">
+                    <ul class="r-content" style="transform: translate3d(0px, 0px, 0px);">
+                        <!--<li class="list-item">-->
+                            <!--<a href="#" target="_blank" title="劲顺花园 居家装修 南北户型 芳草园 莫愁湖地铁。">-->
+                                <!--<div class="item-aside">-->
+                                    <!--<img src="img/map/list1.jpg">-->
+                                    <!--<div class="item-btm">-->
+                                        <!--<span class="item-img-icon">-->
+                                            <!--<i class="i-icon-arrow"></i>-->
+                                            <!--<i class="i-icon-dot"></i>-->
+                                        <!--</span>-->
+                                        <!--<span>7</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="item-main" style="position: relative;top: -15px;">-->
+                                    <!--<p class="item-tle">劲顺花园 居家装修 南北户型 芳草园 莫愁湖地铁。</p>-->
+                                    <!--<p class="item-des">-->
+                                        <!--<span>2室1厅</span>-->
+                                        <!--<span>50平米</span>-->
+                                        <!--<span>南 北</span>-->
+                                        <!--<span class="item-side">203<span>万</span></span>-->
+                                    <!--</p>-->
+                                    <!--<p class="item-community">-->
+                                        <!--<span>劲顺花园</span>-->
+                                    <!--</p>-->
+                                    <!--<p class="item-tag-wrap">-->
+                                        <!--<span class="item-tag-subway item-extra" title="距离2号线汉中门站604米">地铁</span>-->
+                                        <!--<span class="item-tag-taxfree item-extra" title="">房本满五年</span>-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mapResize" class="btn-wrap">
+        <div class="btn">
+            <img id="in" src="img/map/button_in.png" width="12px" height="52px" style="display:block">
+            <img id="out" src="img/map/button_out.png" width="12px" height="52px" style="display:none">
+        </div>
+    </div>
+</div>
+<!--地图-->
+<div id="allmap"></div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        var count = 1;
+        $(".btn").click(function(){
+            if(count == 1){
+                var width = $("#houseList").width();
+                width = 0;
+                $("#houseList").css("width",width);
+                $("#mapResize").css("left",0);
+                $("#in").css("display","none");
+                $("#out").css("display","block");
+                count = 0;
+            }else if(count ==0 ){
+                var width = $("#houseList").width();
+                width = 403+"px";
+                $("#houseList").css("width",width);
+                $("#mapResize").css("left","404px");
+                $("#in").css("display","block");
+                $("#out").css("display","none");
+                count = 1;
+            }
+        })
+    </script>
+<script type="text/javascript">
+    // 百度地图API功能
+    var mp = new BMap.Map("allmap",{minZoom:12});
+    mp.centerAndZoom(new BMap.Point(118.637996,32.047516), 12);
+    mp.enableScrollWheelZoom();
+    //		var b = new BMap.Bounds(new BMap.Point(118.428152,32.234384),new BMap.Point(119.203138,31.684423));
+    //		try {
+    //			BMapLib.AreaRestriction.setBounds(mp, b);
+    //		} catch (e) {
+    //			alert(e);
+    //		}
+    // 复杂的自定义覆盖物
+    function ComplexCustomOverlay(point, text){
+        this._point = point;
+        this._text = text;
+    }
+    ComplexCustomOverlay.prototype = new BMap.Overlay();
+    ComplexCustomOverlay.prototype.initialize = function(map){
+        this._map = map;
+        var div = this._div = document.createElement("div");
+        div.style.position = "absolute";
+        div.style.zIndex = BMap.Overlay.getZIndex(this._point.lat);
+        div.style.backgroundColor = "#EE5D5B";
+//      div.style.border = "1px solid #BC3B3A";
+        div.style.color = "white";
+//      div.style.height = "18px";
+        div.style.width="100px";
+        div.style.height="100px";
+        div.style.borderRadius="50%";
+        div.style.padding = "2px";
+        div.style.lineHeight = "18px";
+        div.style.whiteSpace = "nowrap";
+        div.style.MozUserSelect = "none";
+        div.style.fontSize = "14px"
+        div.style.textAlign="center";
+        div.style.lineHeight="100px";
+
+        var span = this._span = document.createElement("span");
+        div.appendChild(span);
+        span.appendChild(document.createTextNode(this._text));
+
+        div.onmouseover = function(){
+            this.style.backgroundColor = "#6BADCA";
+            this.style.borderColor = "#0000ff";
+        }
+        div.onmouseout = function(){
+            this.style.backgroundColor = "#EE5D5B";
+            this.style.borderColor = "#BC3B3A";
+        }
+        mp.getPanes().labelPane.appendChild(div);
+
+        return div;
+    }
+    ComplexCustomOverlay.prototype.draw = function(){
+        var map = this._map;
+        var pixel = map.pointToOverlayPixel(this._point);
+        this._div.style.left = pixel.x + "px";
+        this._div.style.top  = pixel.y - 30 + "px";
+    }
+
+    var qixia = new ComplexCustomOverlay(new BMap.Point(118.8724738417,32.1545319197), "栖霞区");
+    var jianye = new ComplexCustomOverlay(new BMap.Point(118.713204,32.012333), "建邺区");
+    var gulou = new ComplexCustomOverlay(new BMap.Point(118.732176,32.082359), "鼓楼区");
+    var pukou = new ComplexCustomOverlay(new BMap.Point(118.545904,32.042701), "浦口区");
+    var xuanwu = new ComplexCustomOverlay(new BMap.Point(118.802891,32.091659), "玄武区");
+    var qinhuai= new ComplexCustomOverlay(new BMap.Point(118.789668,32.037314), "秦淮区");
+    var jiangning= new ComplexCustomOverlay(new BMap.Point(118.813814,31.947646), "江宁区");
+
+    mp.addOverlay(qixia);
+    mp.addOverlay(jianye);
+    mp.addOverlay(gulou);
+    mp.addOverlay(pukou);
+    mp.addOverlay(xuanwu);
+    mp.addOverlay(qinhuai);
+    mp.addOverlay(jiangning);
+
+
+</script>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/map_search.js"></script>
+</body>
+</html>

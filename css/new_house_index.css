@@ -1,0 +1,628 @@
+       *{
+            margin:0;
+            padding:0;
+			text-decoration:none;
+            list-style:none;
+        }
+        body {
+            font-size: 14px;
+            color: #333;
+            font-family: "Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif;
+            text-rendering: optimizeLegibility;
+        }
+		a{
+			text-decoration: none;
+			outline: none;
+		}
+		.new_house_nav{
+			width:1150px;
+			height:87px;
+			position:relative;
+			margin:0 auto;
+		}
+		.f1{
+			width:560px;
+			height:85px;
+			position:absolute;
+		
+		}
+		.logo{
+			position:absolute;
+			top:21px;
+		}
+		.nav-border{
+			position:absolute;
+			width:1px;
+			height:28px;
+			display: inline-block;
+			background:#ccc;
+			left:190px;
+			top:5px;
+		}
+		.city>option{
+			width:62px;
+			height:28px;
+			border:1px solid #ccc;
+			position:absolute;
+			left:205px;
+			top:5px;
+			border-radius:5px;
+			opacity:0.7;
+		}
+		.city>span{
+			position:absolute;
+			left:215px;
+			top:10px;
+			width:50px;
+			height:25px;
+			color:#333333;
+		}
+		.sanjiao{
+			position:absolute;
+			top:18px;
+			left:255px;
+			 border-style: solid;
+            border-width: 4px 4px 4px 4px;
+            border-color: #999999 transparent  transparent transparent;
+            width: 0px;
+            height: 0px;
+		}
+		.nav-list{
+			position:absolute;
+			width: 186px;
+			height: 16px;
+			left:295px;
+			top:-5px;
+			list-style:none;
+			
+			
+		}
+		.nav-list li{
+			float:left;
+			margin:0 10px;
+		}
+		.nav-list li a{
+			color:#333333;
+		}
+		.gif{
+			position:absolute;
+			left:187px;
+			top:-5px;
+		}
+		.phone{
+			
+			width: 156px;
+      height: 85px;
+			position:absolute;
+			left:990px;
+		}
+		.phone span{
+				position:absolute;
+			top:35px;
+			color:#339933;
+		}
+		.telephone{
+			
+			width: 18px;
+			height: 14px;
+			position:absolute;
+			left:970px;
+			top:39px;
+			background:url(../img/new_house_index/Sprite_Graphic_v2.png) -83px -10px;
+		}
+        .xinfang-banner{
+            max-width: 1920px;
+            height: 444px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .fl{
+            float:left;
+        }
+        ul,li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            outline: none;}
+        .clear {
+            display: block;
+        }
+        /*banner背景图*/
+        .xinfang-banner .x-banner{
+            background:url(../img/new_house_index/banner.jpg) center center no-repeat;
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        .xinfang-banner .x-banner .title{
+            background: url(../img/new_house_index/Sprite_Graphic_v2.png) no-repeat 0 -111px;
+            width: 720px;
+            height: 100px;
+            display: inline-block;
+            position: absolute;
+            left: 66%;
+            top: 53%;
+            margin-top: -50px;
+            margin-left: -360px;
+        }
+        /*左侧：地图找房*/
+        .xinfang-banner .x-map {
+            width: 248px;
+            position: absolute;
+            z-index: 2;
+        }
+        .xinfang-banner .x-map .x-m-top {
+            background: #263138;
+            padding: 20px 15px 17px 15px;
+            height: 72px;
+        }
+        .xinfang-banner .x-map .x-m-top .s-city {
+            color: white;
+            margin-bottom: 10px;
+            height: 15px;
+            line-height: 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .xinfang-banner .x-map .x-m-top .s-city i{
+            background: url(../img/new_house_index/Sprite_Graphic_v2.png) -8px -10px no-repeat ;
+            background-size: 710px 230px;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 5px;
+            position: relative;
+            top: -1px;
+            left: -1px;
+        }
+        /*地图找房*/
+        .xinfang-banner .x-map .x-m-top .s-map {
+            width: 213px;
+            height: 38px;
+            background: #f15044;
+            margin: 18px auto 0 auto;
+            position: relative;
+            left: -1px;
+            color: white;
+            border-radius: 2px;
+            line-height: 38px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .xinfang-banner .x-map .x-m-top .s-map a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .xinfang-banner .x-map .x-m-map {
+            background: url(../img/new_house_index/map_nanjing.png) no-repeat 0 0;
+            background-size: 250px 336px;
+        }
+        .xinfang-banner .x-map .x-m-info {
+            width: 248px;
+            height: 335px;
+            position: absolute;
+            left: 0;
+            top: 109px;
+            z-index: 1;
+        }
+        /*在售楼盘*/
+        .xinfang-banner .x-map .x-m-info .x-m-txt {
+            position: absolute;
+            bottom: 0;
+            color: white;
+            margin: 12px 12px 15px 15px;
+            z-index: 2;
+        }
+        .xinfang-banner .x-map .x-m-info .x-m-txt p {
+            font-size: 12px;
+            line-height: 22px;
+        }
+        /*搜索*/
+        .xinfang-banner .x-filter {
+            position: absolute;
+            left: 242px;
+            background: rgba(57,172,106,0.9);
+            height: 338px;
+            padding: 53px 16px 53px 30px;
+            z-index: 2;
+        }
+        .xinfang-banner .x-filter .x-f-block {
+            display: block;
+            width: 200px;
+        }
+        /*搜索框*/
+        .xinfang-banner .x-filter .x-f-block .search {
+            width: 134px;
+            margin-bottom: 20px;
+            border: 1px solid white;
+            background: #369d67;
+            padding: 0 8px;
+            height: 36px;
+            line-height: 36px;
+            border-radius: 2px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            color: white;
+        }
+        .xinfang-banner .x-filter .x-f-block .btn {
+            background: url(../img/new_house_index/Sprite_Graphic_v2.png) no-repeat -185px -10px;
+            width: 38px;
+            height: 76px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        /*推荐搜索*/
+       .xinfang-banner .x-filter .x-f-desc .sub {
+            color: #c1dccb;
+            margin-right: 5px;
+        }
+       .xinfang-banner .x-filter .x-f-desc a {
+            color: #fff;
+        }
+        .xinfang-banner .x-filter .x-f-desc {
+            color: white;
+            width: 190px;
+            font-size: 12px;
+            margin-bottom: 50px;
+        }
+        /*条件找房*/
+       .xinfang-banner .x-filter .x-f-block .txt {
+            font-size: 12px;
+            color: white;
+            margin-bottom: 15px;
+       }
+        .xinfang-banner .x-filter .x-f-block .choose {
+            background: #369d67;
+            color: white;
+            width: 60px;
+            height: 35px;
+            line-height: 35px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            padding: 0 9px;
+            border: 1px solid white;
+            display: inline-block;
+            border-radius: 2px;
+            position: relative;
+            cursor: pointer;
+        }
+        .xinfang-banner .x-filter .x-f-block .choose .fix-item {
+            width: 50px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .xinfang-banner .x-filter .x-f-block .choose ul.items {
+            position: absolute;
+            left: -1px;
+            border: 1px solid white;
+            width: 100%;
+            background-color: white;
+            color: black;
+            display: none;
+            max-height: 140px;
+            z-index: 2;
+        }
+        .xinfang-banner .x-filter .x-f-block .choose:hover ul.items{
+            display: block;
+            height:150px;
+            overflow:auto;
+        }
+        .xinfang-banner .x-filter .x-f-block .choose ul.items li {
+            text-align: left;
+            font-size: 12px;
+            width: 86%;
+            padding-left: 14%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .xinfang-banner .x-filter .x-f-block .choose .fil-label {
+            background: url(../img/new_house_index/Sprite_Graphic_v2.png) no-repeat -60px -9px;
+            display: inline-block;
+            width: 9px;
+            height: 7px;
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            margin-top: -4px;
+        }
+        /*筛选按钮*/
+        .xinfang-banner .x-filter .x-f-block .fil-btn {
+            border-radius: 2px;
+            text-align: center;
+            width: 190px;
+            height: 37px;
+            line-height: 38px;
+            background: white;
+            color: #39ac6a;
+            margin-top: 30px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+            
+        #side_nav{
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 38px;
+            height: 100%;
+            background: #fff;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+        #side_nav .side_body{
+            width:100%;
+            position:absolute;
+            top:50%;
+            margin-top:-150px;
+            display:block;
+        }
+        #side_nav .side_body li{
+            margin: 7px 0;
+            position: relative;
+        }
+        #side_nav .side_body a{
+            height: 38px;
+            line-height: 38px;
+            display:block;
+            width: 38px;
+            overflow:hidden;
+            background:url("../img/new_house_index/sidebar_spriteV4.png");
+        }
+        #side_nav .side_body .myfav a{
+            background-position:-38px 0;
+        }
+        #side_nav .side_body .myask a{
+            background-position:-38px -37px;
+            height: 50px;
+        }
+        #side_nav .side_body .sell a{
+            background-position:-38px -88px;
+            height: 50px;
+        }
+        #side_nav .side_body .baodan a{
+            background-position:-38px -188px;
+        }
+        #side_nav .side_body .app a{
+            background-position:-38px -226px;
+        }
+        #side_nav .side_body .help a{
+            background-position:-38px -302px;
+        }
+        #side_nav .side_body .split_line {
+            width: 19px;
+            height: 1px;
+            margin: 7px auto;
+            background: #ccc;
+        }
+        #side_nav .side_body .tips{
+            opacity: 0;
+            display:none;
+            position: absolute;
+            right: 38px;
+            top: 0;
+            padding: 0 14px;
+            line-height: 38px;
+            color: #fff;
+            font-size: 12px;
+            text-align:center;
+            background: #00ae66;
+            white-space: nowrap;
+            height:100%;
+            transition:.3s;
+        }
+        #side_nav .side_body .myask .tips{
+            line-height: 50px;
+        }
+        #side_nav .side_body .sell .tips{
+            line-height: 50px;
+        }
+        #side_nav .side_body i{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            margin: -5px -10px 0 0;
+            font-size: 0;
+            border: 5px solid;
+            border-color: transparent transparent transparent #00ae66;
+            overflow: hidden;
+        }
+        #side_nav .side_body .app_tips{
+            color: #fff;
+            font-size: 12px;
+            position: absolute;
+            top: -30px;
+            padding: 8px;
+            background: #fff;
+            right: 38px;
+            display:none;
+            opacity:0;
+            transition:.3s;
+        }
+        #side_nav .side_body .app i{
+            border-color:transparent transparent transparent  white;
+        }
+        #side_nav .side_body .app img{
+            border: 0;
+            vertical-align: top;
+            width: 61px;
+        }
+        #side_nav .side_body .app .title {
+            display: block;
+            padding-top: 8px;
+            color: #000;
+            line-height: 12px;
+            font-size: 12px;
+            text-align: center;
+        }
+        #side_nav .side_body .active{
+            opacity:1;
+        }
+    /*中间弹出框*/
+        #box{
+            width: 415px;
+            padding: 55px;
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            border-radius: 2px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -263px;
+            margin-top: -273px;
+        }
+        #box .box_intr{
+            font-size: 12px;
+            color: #999;
+            line-height: 20px;
+        }
+        #box .tab{
+            margin-top: 25px;
+        }
+        #box .tab span{
+            color: #394043;
+            font-size: 14px;
+            background: #f5f5f6;
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+        #box .tab .box_active{
+            color: #f5f5f6;
+            background: #394043;
+            position: relative;
+        }
+        #box .tab i{
+            position: absolute;
+            right: 50%;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            margin: 0px -5px -10px 0;
+            font-size: 0;
+            border: 5px solid;
+            border-color:#394043 transparent  transparent  transparent;
+            overflow: hidden;
+        }
+		div#new_house_all{
+			width:1150px;
+			height:1112px;
+			margin:0 auto;
+			padding:40px 0 50px 0;
+			position:relative;
+		}
+		/******  标题  ******/
+		div#new_house_all .house_title{
+			position:relative;
+		}
+		div#new_house_all .house_title h1{
+			width:100%;
+			height:44px;
+			text-align:center;
+			padding:0;
+			margin:0;
+		}
+		div#new_house_all .house_title .all{
+			position:absolute;
+			text-align:left;
+			font-size:14px;
+			margin-top:10px;
+			float:left;
+			font-family: "Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif;
+		}
+		div#new_house_all .house_title .all a{
+			 text-decoration:none;
+			 color:#1688be;
+		 }
+		/******  新房图片  ******/
+		div#new_house_all .item-list{
+			padding-top:44px;
+			width:100%;
+			height:920px;
+			overflow:hidden;
+		}
+		div#new_house_all .item-list ul{
+			width:100%;
+			height:920px;
+			position:relative;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+		}
+		div#new_house_all .item-list ul>li{
+			width:342px;
+			height:400px;
+		}
+		div#new_house_all .item-list ul>li .img-part{
+			width:342px;
+			height:342px;
+			position:relative;
+		}
+		div#new_house_all .item-list ul>li .img-part img{
+			width:342px;
+			height:342px;
+		}
+		div#new_house_all .item-list ul>li .img-part .dec{
+			position:absolute;
+			width:230px;
+			top:40%;
+			left:15%;
+			text-align:center;
+			color:#fff;
+			font-size:30px;
+			font-family:"Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif;
+		}
+		div#new_house_all .item-list ul>li .img-part .area{
+			position:absolute;
+			width:230px;
+			left:20px;
+			bottom:20px;
+			color:#fff;
+			font-size:16px;
+			font-family:"Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif;
+		}
+		div#new_house_all .item-list ul>li .del-part{
+			position:relative;
+			width:342px;
+			height:140px;
+		}
+		div#new_house_all .item-list ul>li .del-part .price{
+			font-size:16px;
+			margin-top:10px;
+		}
+		div#new_house_all .item-list ul>li .del-part .price a{
+			color:red;
+		}
+		div#new_house_all .item-list ul>li .del-part .pace{
+			margin-top:10px;
+			font-size:16px;
+		}
+		div#new_house_all .item-list ul>li .del-part .house{
+			position:absolute;
+			top:0;
+			right:0;
+
+			border:1px solid #c0c0c0;
+			color:#c0c0c0;
+		}
+		/**          查看更多             **/
+		div#new_house_all .show-more{
+			width:100%;
+			height:45px;
+			background:#EDEDEE;
+			text-align:center;
+			line-height:45px;
+		}
+		div#new_house_all .show-more a{
+			color:#797C7F;
+		}
