@@ -61,3 +61,30 @@ function scroll(lh,speed,delay) {
     setTimeout(start,delay);
 }
 scroll(35,35,3000);
+
+//搜索框部分功能
+var href = "second-hand-house";
+$(function(){
+	$("#list").on("click","li",function(){
+		var that = $(this);
+		href = that.data("href");
+		that.addClass("checked").siblings().removeClass("checked");
+		console.log(href);
+	switch(href){
+		case "second-hand-house":$(".menu").find("i").css("left",40); break;
+		case "new-house":$(".menu").find("i").css("left",110); break;
+		case "renting":$(".menu").find("i").css("left",175); break;
+		case "question":$(".menu").find("i").css("left",245); break;
+	}
+	
+		
+		
+	});
+});
+$("#keyword-box").focus(function(){
+	$("#"+href).css("display","block")
+		.siblings().css("display","none");
+});
+$("#keyword-box").blur(function(){
+	$("#"+href).css("display","none")
+});

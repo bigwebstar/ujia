@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>该房屋详情页面</title>
+	<link rel="stylesheet" href="css/basic.css">
+	<style>
+		body{
+			background:#ddd;
+		}
+		*{box-sizing:border-box;}
+		#container{
+			min-height:500px;
+			width:100%;
+			overflow:hidden;
+			box-sizing:border-box;
+			padding:0 137px;
+
+		}
+		.detail-head{
+			margin:25px 0;	
+			background:#fff;
+			width:100%;
+			height:120px;
+			border:1px solid #ddd;
+			box-sizing:border-box;
+			padding:0 10px;
+			position:relative;
+		}
+		.detail-head .title{
+			font-size:36px;
+			margin:20px 0 10px;
+		}
+		.detail-head .sub-title{
+			color:#758ABE
+		}
+		.detail-head .btn-box{
+			position:absolute;
+			top:0;right:50px;
+			height:90px;width:170px;
+			padding-top:30px;
+		}
+		.detail-head .btn-box>div{
+			width:80px;
+			height:90px;
+			text-align:center;
+			color:#6699ff;
+		}
+		.detail-head .btn-box>div button{
+			background:#fff;outline:0;border:0;
+			width:100%;
+			height:40px;
+			margin-bottom:10px;
+		}
+		.detail-head .btn-box>div.guanzhu{
+			float:left;
+		}
+		.detail-head .btn-box>div.yuyue{
+			float:right;
+		}
+		.detail-head .btn-box>div.yuyue button{
+			background:#00AE66;
+			color:#fff;
+		}
+		.detail-body{
+			height:500px;
+			background:#fff;
+			margin-bottom:25px;
+		}
+		#preview{
+			 width:460px;
+			 float:left;
+			 position:relative;
+	  }
+		#preview>#mediumDiv{
+			 width: 350px;
+			 height: 350px;
+			 border: 1px solid #ddd;
+			 margin-bottom: 5px;
+			 text-align:center;
+			 position: relative;
+	 }
+	 #preview>#mediumDiv img
+	 {
+			 vertical-align:middle;
+			 width:350px;
+			 height:350px;
+	 }
+	 #preview>#mediumDiv>#mask{
+			 position: absolute;
+			 width: 175px;
+			 height: 175px;
+			 background: #ffa;
+			 opacity: 0.5;
+			 top: 0;
+			 left: 0;
+			 display:none;
+	 }
+	 #preview>#mediumDiv>#superMask{
+			 position: absolute;
+			 width: 350px;
+			 height: 350px;
+			 opacity: 0;
+			 top: 0;
+			 left: 0;
+			 cursor: move;
+	 }
+	 #preview>#mediumDiv>.title{
+		   position:absolute;
+			 bottom:10px;
+			 left:10px;
+			 font-size:24px;
+			 color:#fff;
+	 }
+	 #preview>#largeDiv{
+			 position: absolute;
+			 width: 400px;
+			 height: 400px;
+			 background: #fff;
+			 border: 1px solid #ddd;
+			 top: 0;
+			 left: 355px;
+			 z-index: 999;
+			 display: none;
+	 }
+		 #preview h1
+	 {
+			 width: 352px;
+			 height: 54px;
+			 overflow:hidden;
+			 padding: 0px;
+			 position:relative;
+	 }
+	 /*前后移动的按钮*/
+	 #preview a.backward,#preview a.forward{
+			 width: 17px;
+			 height: 54px;
+			 background-image: url(img/iconlist_1.png);
+			 background-repeat: no-repeat;
+			 display:block;
+			 z-index:20;
+			 position:absolute;
+			 top:0px;
+	 }
+	 #preview a.backward{
+			 left:0px;
+	 }
+	 #preview a.forward{
+			 right:0px;
+	 }
+	 #preview a.backward {
+			 background-position: 0px -139px;
+	 }
+	 #preview a.backward:hover {
+			 background-position: -34px -139px;
+	 }
+	 #preview a.backward.disabled {
+			 background-position: -68px -139px;
+	 }
+	 #preview a.forward {
+			 background-position: -17px -139px;
+	 }
+	 #preview a.forward:hover {
+			 background-position: -51px -139px;
+	 }
+	 #preview a.forward.disabled {
+			 background-position: -85px -139px;
+	 }
+	 /*产品的图标列表*/
+	 #preview #icon_list {
+			 height: 54px;
+			 position:absolute;
+			 left: 20px;
+			 top: 0px;
+	 }
+	 #preview #icon_list li {
+			 width: 62px;
+			 text-align: center;
+			 float: left;
+	 }
+	 #preview #icon_list li img {
+			 width: 50px;
+			 height: 50px;
+			 padding: 1px;
+			 border: 1px solid #CECFCE;
+	 }
+	 #preview #icon_list li img:hover {
+			 border: 2px solid #e4393c;
+			 padding: 0;
+	 }
+	 /*右侧商品信息*/
+	  #show-details{
+			box-sizing:border-box;
+			padding:30px 45px;
+			min-height:200px;
+			width:690px;
+			float:left;
+	  }
+		#show-details>div{
+			height:40px;
+			color:#999;
+		}
+		#show-details>div span{
+			color:#333;
+		}
+		#show-details>div span.myBlue{
+			color:#21A5E9;
+		}
+		#show-details>div a{
+			color:blue;
+		}
+		.princle{
+			text-align:right;
+		}
+		/*底部详细信息*/
+		.detail-foot{
+			min-height:500px;
+			
+		}
+		.detail-foot .floor1{
+			min-height:300px;
+			background:#fff;
+			margin-bottom:25px;
+			padding:25px;
+		}
+		.detail-foot h1{
+			color:#333;
+			font-size:24px;
+			margin-bottom:25px;
+		}
+		.detail-foot h2{
+			color:#111;
+			font-size:18px;
+			border-bottom:2px solid #000;
+		}
+		.shuxing{
+			height:35px;
+			margin:25px;
+			color:#aaa;
+		}
+		.shuxing span{
+			color:#666;
+		}
+		.col-4{
+			width:25%;
+			float:left;
+		}
+		.tese{
+			margin:25px;
+		}
+		.col-1{
+			width:8.33%;
+			float:left;
+			text-align:center;
+			color:#ccc;
+		}
+		.col-1 div{
+			width:46px;
+			height:44px;
+			background:url("img/detail/zf-icon-null2.png");
+			margin:10px auto;
+		}
+		.detail-foot .floor2{
+			min-height:200px;
+			background:#fff;
+			padding:25px;
+		}
+		.floor3{
+			margin:25px 0;
+			padding:15px;
+			text-align:center;
+			background:#fff;
+		}
+		.floor2 table tbody tr td{
+			height:100px;
+			border-bottom:1px solid #aaa;
+		}
+		.floor2 table tbody td:first-child{
+			width:40%;
+		}
+		.floor2 table tbody td:first-child>div {
+			float:left;
+		}
+		.floor2 table tbody td:first-child>div.detail{
+			padding:5px 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<!--#include file="product-header.html" -->
+	<!--#include file="product-top.html" -->
+	<div id="container">
+		<div class="detail-head">
+			<h1 class="title">中间楼层 小区中间位置 不临街 满2年 交通便利</h1>
+			<p class="sub-title">此房楼层好 楼栋前方无遮挡 采光好 小区中间位置</p>
+			<div class="btn-box">
+				<div class="guanzhu">
+					<button>关注房源</button>
+					<p class="person">38人关注</p>
+				</div>
+				<div class="yuyue">
+					<button>预约看房</button>
+					<p class="person">48人看过</p>
+				</div>
+			</div>
+		</div>
+		<div class="detail-body">
+			<!--左侧放大镜 -->
+			<div id="preview">
+        <div id="mediumDiv">
+          <img id="mImg" src="img/re_house/md/15123758419626.jpg">
+          <div id="mask"></div>
+          <div id="superMask"></div>
+					<h2 class="title">A室</h2>
+        </div>
+        <div id="largeDiv"></div>
+        <h1>
+          <a class="backward disabled"></a>
+          <a class="forward"></a>
+          <ul id="icon_list">
+						<li class="i1">
+							<img src="img/re_house/sm/15123758419626.jpg" alt="">
+						</li>
+          </ul>
+        </h1>
+      </div>
+      <!--右侧详情-->
+      <div id="show-details">
+        <div>
+					面积：<span>143.64平米</span>
+				</div>
+				<div>
+					房屋户型：<span>3室2厅2卫 整租</span>
+				</div>
+				<div>
+					楼层：<span>低楼层 (共18层)</span>
+				</div>
+				<div>
+					房屋朝向：<span>南</span>
+				</div>
+				<div>
+					地铁：<span>距地铁2号线奥体东948米</span>
+				</div>
+				<div>
+					小区：<span class="myBlue">银城西堤国际六区</span>
+				</div>
+				<div>
+					位置：<span class="myBlue">建邺 奥体</span>
+				</div>
+				<div>
+					时间：<span>5天前发布</span>
+				</div>
+				<div class="princle">
+					<a href="404.html">虚假房源举报 假一罚百细则</a>
+				</div>
+      </div>
+		</div>
+		<div class="detail-foot">
+			<div class="floor1">
+				<h1>房源介绍</h1>
+				<h2>基本属性</h2>
+				<div class="shuxing">
+					<div class="col-4">
+						租赁方式：<span>整租</span>    
+					</div>
+					<div class="col-4">
+						付款方式： <span>半年付</span>
+					</div>
+					<div class="col-4">
+						房屋现状：<span>目前闲置</span>
+					</div>
+					<div class="col-4">
+						租赁周期：<span>暂无数据</span>	
+					</div>
+				</div>
+				<h2>房源特色</h2>
+				<div class="tese">
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+					<div class="col-1">
+						<div class="yg"></div>
+						<p class="title">衣柜</p>
+					</div>
+				</div>
+			</div>
+			<div class="floor2">
+				<h1>成交记录</h1>
+				<table width="100%">
+					<thead>
+						<tr style="text-align:left;font-size:18px;height:30px;">
+							<th>房屋户型</th>
+							<th>面积</th>
+							<th>签约日期</th>
+							<th>成交价</th>
+							<th>数据来源</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						
+					</tbody>
+				</table>
+			</div>
+			<div class="floor3">
+				暂无房源介绍
+			</div>
+		</div>
+	</div>
+	<!--#include file="footer.html" -->
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script>
+		$(function(){
+				const LIWIDTH=62,
+					SIZE=parseFloat($("#mask").css("width"))
+					MAX=parseFloat(
+						$("#superMask").css("width")
+					)-SIZE;
+				var liCount=0, //保存li的个数
+						moved=0; //保存已经左移的li个数
+				$.get("data/routes/products/second_house_detail.php",location.search.slice(1))
+					.then(data=>{
+						var detail_feature = data.detail_feature;
+						var detail_pic = data.detail_pic;
+						var detail_right = data.detail_right;
+						var floor = detail_right.floor;
+						var district = detail_right.district;
+						var detail_transaction = data.detail_transaction;
+
+						//放大镜
+							$("#mImg").attr("src",detail_pic[0].md);
+							$("#largeDiv")
+								.css("backgroundImage","url("+detail_pic[0].lg+")");
+							var html="";
+							for(var pic of detail_pic){
+								html+=
+									`<li><img src="${pic.sm}" data-md="${pic.md}" data-lg="${pic.lg}"></li>`
+							}
+							var $icon_list=$("#icon_list")
+							$icon_list.html(html)
+								.css("width",LIWIDTH*detail_pic.length);
+							liCount=detail_pic.length;
+							if(liCount<=5)
+								$("#preview>h1>a").addClass("disabled");
+							else{
+								$("#preview>h1>a").off("click")
+									.click(e=>{
+									var $a=$(e.target);
+									if(!$a.is(".disabled")){
+										if($a.hasClass("backward")){
+											moved--;
+										}else{
+											moved++;
+										}
+										$icon_list.css("left",-LIWIDTH*moved+20);
+										if(moved==0){
+											$("#preview>h1>a.backward").addClass("disabled");
+											$("#preview>h1>a.forward").removeClass("disabled");
+										}else if(liCount-moved==5){
+											$("#preview>h1>a.forward").addClass("disabled");
+											$("#preview>h1>a.backward").removeClass("disabled");
+										}else{
+											$("#preview>h1>a").removeClass("disabled");
+										}
+									}
+								})
+							}
+							var $largeDiv=$("#largeDiv");
+							$icon_list.children().mouseenter(function(){
+								//this->li
+								var $li=$(this);
+								var src=$li.children().first()
+													.attr("src")
+													.replace("/sm/","/md/");
+								$("#mImg").attr({src});
+								$largeDiv
+									.css("backgroundImage","url("+src.replace("/md/","/lg/")+")");
+							});
+							var $mask=$("#mask");        
+							$("#superMask")
+								.hover(()=>{
+									$mask.toggle();
+									$largeDiv.toggle();
+								})
+								.mousemove(e=>{
+									var top=e.offsetY-SIZE/2,
+											left=e.offsetX-SIZE/2;
+									if(top<0) top=0;
+									else if(top>MAX) top=MAX;
+									if(left<0) left=0;
+									else if(left>MAX) left=MAX;
+									$mask.css({top,left});
+									$largeDiv.css(
+										"backgroundPosition",
+										`-${left*16/7}px -${top*16/7}px`)
+								});
+							//详情右侧
+							
+						//成交记录
+							var html = "";
+							for(var i=0;i<detail_transaction.length;i++){
+								var item = detail_transaction[i];
+								html +=`
+									<tr>
+										<td>
+											<div class="img">
+												<img src="img/old_house/sm/151237143243.jpg" alt="">
+											</div>
+											<div class="detail">
+												<h3>2室2厅</h3>
+												<p>
+													<span class="floor">${floor}</span>
+													<span class="side">${item.house_type}</span>
+													<span class="kind">精装修</span>
+												</p>
+												<p class="district">银城西堤国际六区</p>
+											</div>
+										</td>
+										<td>${item.area}平</td>
+										<td>${item.contract_time}</td>
+										<td style="color:red;">${item.price}元</td>
+										<td>u家网</td>
+									</tr>
+								`;
+							}
+							$("#tbody").html(html);
+					});
+		})
+	</script>
+</body>
+</html>

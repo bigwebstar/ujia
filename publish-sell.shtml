@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>【南京发布时间从新到旧二手房_南京发布时间从新到旧二手房出售(南京链家网)</title> 
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/publish-sell.css">
+   <link rel="stylesheet" href="css/product-header.css" />
+    <style>
+        .gou{
+            position: absolute;
+            background-image: url("img/publish-sell/sprite.png");
+            background-position: -518px -173px;
+            width: 12px;
+            height: 12px;
+            top: 7px;
+            left: 0;
+        }
+        .dian{
+            display: inline-block;
+            background-image: url(img/publish-sell/sprite.png);
+            /*选中时候的背景图片位置*/
+            background-position: -578px -173px;
+            /*默认未选中时候背景图片的位置*/
+            /*background-position: -535px -185px;*/
+            width: 12px;
+            height: 12px;
+            vertical-align: -1px;
+            margin-right: 7px;
+        }
+        .try{
+            overflow: hidden;
+            display: block;
+            height:auto;
+        }
+    </style>
+</head>
+<body>
+<!--#include file="product-header.html" -->
+<!--#include file="product-top.html" -->
+    <div class="filter">
+        <div class="position">
+            <ul class="position-nav">
+                <li><h2>位置</h2></li>
+                <li>
+                    <a href="#" title="南京二手房" class="selected">区域
+                        <span></span>
+                    </a>
+                    <a href="#" title="南京地铁找房">地铁线
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="position-content">
+                <li>
+                    <a href="#" title="南京鼓楼在售二手房">鼓楼</a>
+                    <a href="#" title="南京建邺在售二手房">建邺</a>
+                    <a href="#" title="南京秦淮在售二手房">秦淮</a>
+                    <a href="#" title="南京玄武在售二手房">玄武</a>
+                    <a href="#" title="南京雨花台在售二手房">雨花台</a>
+                    <a href="#" title="南京栖霞在售二手房">栖霞</a>
+                    <a href="#" title="南京江宁在售二手房">江宁</a>
+                    <a href="#" title="南京浦口在售二手房">浦口</a>
+                    <a href="#" title="南京六合在售二手房">六合</a>
+                    <a href="#" title="南京溧水在售二手房">溧水</a>
+                    <a href="#" title="南京高淳在售二手房">高淳</a>
+                </li>
+                <li>
+                    <a href="#" title="南京1号线在售二手房">1号线</a>
+                    <a href="#" title="南京2号线在售二手房">2号线</a>
+                    <a href="#" title="南京3号线在售二手房">3号线</a>
+                    <a href="#" title="南京4号线在售二手房">4号线</a>
+                    <a href="#" title="南京10号线在售二手房">10号线</a>
+                    <a href="#" title="南京S1机场线在售二手房">S1机场线</a>
+                    <a href="#" title="南京S8号线在售二手房">S8号线</a>
+                </li>
+            </ul>
+        </div>
+        <div class="list-more">
+            <!--租金-->
+            <ul class="list_small">
+                <li title="南京售价在售二手房"><h2>租金</h2></li>
+                <li id="price">  <!--<---data-price="0_60"----->
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-price="0_1000">1000元以下</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-price="1000_1500">1000-1500元</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-price="1500_2000">1500-2000万</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-price="2000_3000">2000-3000万</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-price="3000_99999">3000元以上</span>
+                    </a>
+                </li>
+            </ul>
+            <!--面积-->
+            <ul class="list_small">
+                <li title="南京面积在售二手房"><h2>面积</h2></li>
+                <li id="size">   <!--<---data-size="0_60"----->
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-size="0_50">50平以下</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-size="50_70">50-70平</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-size="70_90">70-90平</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-size="90_110">90-110平</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-size="110_130">110-130平</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-size="130_150">130-150平</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-size="150_200">150-200平以上</span>
+                    </a>
+										<a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-size="200_99999">200平以上</span>
+                    </a>
+                    <span class="more-sel">
+                        <input type="text" class="lf">
+                        <span>-</span>
+                        <input type="text">
+                        <span>万</span>
+                    </span>
+                </li>
+            </ul>
+            <!--房型-->
+            <ul class="list_small">
+                <li title="南京房型在售二手房"><h2>房型</h2></li>
+                <li id="room">    <!--<---1,2,3----->
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-room="1">一室</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-room="2">二室</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-room="3">三室</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-room="4">四室</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf" data-room="4">四室以上</span>
+                    </a>
+                </li>
+            </ul>
+            <!--楼层-->
+            <ul  class="list_small">
+                <li title="南京楼层在售二手房"><h2>楼层</h2></li>
+                <li id="floor">    <!--<---低楼层----->
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf">低楼层</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf">中楼层</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf">高楼层</span>
+                    </a>
+                </li>
+            </ul >
+            <!--朝向-->
+            <ul  class="list_small">
+                <li title="南京朝向在售二手房"><h2>朝向</h2></li>
+                <li id="side">  <!--<---朝南----->
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf">朝东</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf">朝西</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf">朝南</span>
+                    </a>
+                    <a href="#">
+                        <span class="lf fangkuang"></span>
+                        <span class="lf">朝北</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <!--其他-->
+            <ul  class="list_small">
+                <li title="南京其他在售二手房"><h2>其他</h2></li>
+                <li>
+                    <form action="#">
+                        <input type="text"placeholder="在结果在搜索">
+                        <button type="submit">确定</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="orderFilter">
+        <div class="orderTag">
+            <ul>
+                <li  class="orderTag-selected">
+                    <h3><a href="#/ershoufang/">默认排序</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#/ershoufang/co32/">最新</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#/ershoufang/co11/">面积</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#/ershoufang/co52/">带看较多</a></h3>
+                </li>
+            </ul>
+            <div class="orderType" id="switchView">
+                <a href="#"><span class="list" title="列表模式"></span></a>
+                <a href="#"><span class="img" title="大图模式"></span></a>
+            </div>
+        </div>
+        <div class="filterAgain">
+            <div class="title">筛选：</div>
+            <ul>
+                <li>
+                    <h3><a href="#/ershoufang/co41ty1/"><span class="checkbox"></span>满两年</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#/ershoufang/co41mw1/"><span class="checkbox"></span>满五年</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#/ershoufang/co41fh1/"><span class="checkbox"></span>优选</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#/ershoufang/co41tt2/"><span class="checkbox"></span>新上</a></h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#/ershoufang/co41tt4/">
+                            <span class="checkbox"></span>随时看房
+                            <div class="info"><span></span>
+                                <div class="infoContent min-wid">
+                                    经纪人持有该房源钥匙，您可以随时预约看房
+                                </div>
+                            </div>
+                        </a>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="resultDes clear main">
+        <h2 class="total fl">共找到<span id="searchCount"></span>套南京二手房</h2>
+        <!--<div class="button fr"></div>-->
+    </div>
+    <!--二手房商品列表-->
+    <div class="main">
+        <ul class="ss-product">
+           <!--<li>
+               <a href="#">
+                   <img src="img/second-sell/1.jpg" alt="">
+               </a>
+               <div class="ss-product-details">
+                   <div class="lf details-left">
+                   		<div>
+                   			<a href="#">岔路口 瀛洲湾 南北通透 大两房 有电梯</a>
+                   		</div>
+                   		<div>
+                   			<p>
+                   				<span></span>
+                   				<a href="#">高云岭</a>
+                   				 | 3室2厅 | 114.45平米 | 南 | 精装 | 有电梯
+                   			</p>
+                   		</div>
+                       <div>
+                       		<p>
+                       			<span></span>
+                       			低楼层(共11层)2012年建板塔结合  -  
+                       			<a href="#">百家湖</a>
+                       		</p>
+                       </div>
+                       <div>
+                       		<p>
+                       			<span></span>
+                       			402人关注 / 共146次带看 / 4个月以前发布
+                       		</p>
+                       </div>
+                       <div>
+                       		<span class="subway">距离3号线胜太西路站693米</span>
+                       		<span class="taxfree">房本满五年</span>
+                       		<span class="haskey">随时看房</span>
+                       </div>
+                   </div>
+                   <div class="rt details-right">
+                   		<div>
+                   			<span>305</span>
+                   			万
+                   		</div>
+                   		<div>
+                   			<span>单价26650元/平米</span>
+                   		</div>
+                   </div>
+               </div>
+           </li>-->
+        </ul>
+        <div class="contentBottom">
+            <div class="page-box rt">
+                <a class="on" href="#" data-page="1">1</a>
+                <a href="#" data-page="2">2</a>
+                <a href="#" data-page="3">3</a>
+                <span>...</span>
+                <a href="#" data-page="10">10</a>
+                <a href="#" data-page="2">下一页</a>
+            </div>
+        </div>
+    </div>
+    <!--#include file="footer.html" -->
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/publish_search.js"></script>
+<script src="js/publish_list.js"></script>
+</html>

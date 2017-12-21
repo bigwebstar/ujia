@@ -87,11 +87,8 @@
   top: 26px;
   right: -30px;
 }
-<<<<<<< HEAD
 #loginList{display:block;}
 #welcomeList{display:none;}
-=======
->>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
 .header .rt .show-user i {
   background-image: url(../img/images/header/spriteV2_new.png);
   background-position: -203px -20px;
@@ -101,12 +98,9 @@
   position: relative;
   top: 3px;
 }
-<<<<<<< HEAD
 .header .rt .show-out{
   right:-26px;
 }
-=======
->>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
 .header .rt .welcome {
   display: inline-block;
 }
@@ -132,7 +126,6 @@
   line-height: 35px;
   overflow: hidden;
 }
-<<<<<<< HEAD
 /*搜索框上方动态li*/
 .house-num ul {
   height: 35px;
@@ -140,13 +133,6 @@
 }
 
 
-=======
-.house-num ul {
-  height: 35px;
-  overflow: hidden;
-  position: relative;
-}
->>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
 .header .header-wrap .search-box-wrap {
   margin: -2px auto 0;
   width: 812px;
@@ -313,7 +299,6 @@
   line-height: 62px;
   margin-left: 20px;
 }
-<<<<<<< HEAD
 .loginContainer{position: relative;z-index: 10008;}
 input,textarea,button{
   margin: 0;
@@ -537,5 +522,3 @@ input,textarea,button{
   padding: 10px 0 25px 0;
   margin-top: 5px;
 }
-=======
->>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c

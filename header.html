@@ -23,14 +23,14 @@
                 <div class="nav">
                     <ul>
                         <li><a href="second-sell.shtml">二手房</a></li>
-                        <li><a href="#">新房</a></li>
-                        <li><a href="#">租房</a></li>
-                        <li><a href="#">小区</a></li>
-                        <li><a href="#">经纪人</a></li>
-                        <li><a href="#">房价</a></li>
+                        <li><a href="new_house_index.shtml">新房</a></li>
+                        <li><a href="publish-sell.shtml">租房</a></li>
+                        <li><a href="404.html">小区</a></li>
+                        <li><a href="404.html">经纪人</a></li>
+                        <li><a href="tool.html">工具</a></li>
+                        <li><a href="market.shtml">房价</a></li>
                         <li><a href="publish.shtml">业主</a></li>
                     </ul>
-<<<<<<< HEAD
                     <div class="show-user" id="loginList" >
                         <i></i>
                         <div class="welcome">
@@ -49,16 +49,6 @@
                             </a>
                             <a href="#" class="btn-register">
                                 <span class="reg" id="logout">退出</span>
-=======
-                    <div class="show-user">
-                        <i></i>
-                        <div class="welcome">
-                            <a href="#" class="btn-login">
-                                <span class="log">登录</span>
-                            </a>
-                            <a href="#" class="btn-register">
-                                <span class="reg">立即注册</span>
->>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
                             </a>
                         </div>
                     </div>
@@ -68,14 +58,10 @@
             <div class="header-wrap">
                 <div class="wrap-ico"></div>
                 <div class="house-num">
-<<<<<<< HEAD
                     <ul id="advs">
                         <li>北京链家在售新房楼盘451个</li>
                         <li>北京链家真实租房9290套</li>
                         <li>北京链家真实在售二手房276447套</li>
-=======
-                    <ul>
->>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
                         <li>北京链家在售新房楼盘451个</li>
                         <li>北京链家真实租房9290套</li>
                         <li>北京链家真实在售二手房276447套</li>
@@ -85,11 +71,11 @@
                 <div class="search-box-wrap">
                     <div class="search-box-con">
                         <div class="menu">
-                            <ul>
-                                <li class="checked"><span>找二手房</span></li>
-                                <li><span>找新房</span></li>
-                                <li><span>找租房</span></li>
-                                <li><span>搜问答</span></li>
+                            <ul id="list">
+                                <li class="checked" data-href="second-hand-house"><span>找二手房</span></li>
+                                <li data-href="new-house"><span>找新房</span></li>
+                                <li data-href="renting"><span>找租房</span></li>
+                                <li data-href="question"><span>搜问答</span></li>
                             </ul>
                             <i></i>
                         </div>
@@ -100,9 +86,9 @@
                                     <input type="button" id="findHouse" class="btn" value="开始找房">
                                 </form>
                             </div>
-                            <div class="tips" style="display: none;overflow: hidden">
-                                <ul id="second-hand-house">
-                                    <li class="hot-name">热门搜索</li>
+                            <div class="tips" style="display: block;overflow: hidden">
+                                <ul style="display:none" id="second-hand-house">
+                                    <li class="hot-name">二手房热门搜索</li>
                                     <div class="list">
                                         <li><a href="#">新龙城</a></li>
                                         <li><a href="#">新龙城</a></li>
@@ -113,8 +99,8 @@
                                         <li><a href="#">新龙城</a></li>
                                     </div>
                                 </ul>
-                                <ul id="new-house">
-                                    <li class="hot-name">热门搜索</li>
+                                <ul style="display:none" id="new-house">
+                                    <li class="hot-name">新房热门搜索</li>
                                     <div class="list">
                                         <li><a href="#">新龙城</a></li>
                                         <li><a href="#">新龙城</a></li>
@@ -125,8 +111,8 @@
                                         <li><a href="#">新龙城</a></li>
                                     </div>
                                 </ul>
-                                <ul id="renting">
-                                    <li class="hot-name">热门搜索</li>
+                                <ul style="display:none" id="renting">
+                                    <li class="hot-name">出租房热门搜索</li>
                                     <div class="list">
                                         <li><a href="#">新龙城</a></li>
                                         <li><a href="#">新龙城</a></li>
@@ -137,8 +123,8 @@
                                         <li><a href="#">新龙城</a></li>
                                     </div>
                                 </ul>
-                                <ul id="question">
-                                    <li class="hot-name">热门搜索</li>
+                                <ul style="display:none" id="question">
+                                    <li class="hot-name">问答热门搜索</li>
                                     <div class="list">
                                         <li><a href="#">新龙城</a></li>
                                         <li><a href="#">新龙城</a></li>
@@ -154,6 +140,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="wrap-video">
                 <div class="open">
                     <a href="#">
@@ -170,10 +157,7 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/header.js"></script>
-=======
->>>>>>> 892debc0193b3e6e643c16a733904094746ccc6c
 </body>
 </html>

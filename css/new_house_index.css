@@ -549,6 +549,7 @@
 			padding-top:44px;
 			width:100%;
 			height:920px;
+			overflow:hidden;
 		}
 		div#new_house_all .item-list ul{
 			width:100%;

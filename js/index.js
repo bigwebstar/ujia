@@ -9,7 +9,7 @@ $(()=>{
             for(var item of data ){
                 html+=`
             <li>
-                    <a href="#">
+                    <a href="second-sell.shtml">
                         <div class="wrap">
                             <img src="${item.img}" alt="">
                             <span>${item.price}万元</span>
@@ -47,7 +47,7 @@ $(()=>{
             for(var item of data ){
                 html+=`
             <li class="lf">
-                            <a href="#" target="_blank">
+                            <a href="publish-sell.shtml" target="_blank">
                                 <div class="img-container">
                                     <img src="${item.img}" alt="">
                                 </div>
@@ -75,10 +75,9 @@ $(()=>{
             //console.log(data);
             var html="";
             for(var item of data ){
-                console.log(item.title);
                 html+=`
              <li>
-                    <a href="#">
+                    <a href="new_house_index.shtml">
                         <img src="${item.img}" alt="">
                         <div class="notes">
                             <p>${item.title}</p>

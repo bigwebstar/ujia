@@ -83,7 +83,7 @@ $(function(){
 console.log()
 	$(window).scroll(function(){
 		var y =scrollY;
-		console.log(y);
+//		console.log(y);
 		if(y>offset1-innerHeight/2){
 			$aside.show()
 			for(var i in OFFSET){
