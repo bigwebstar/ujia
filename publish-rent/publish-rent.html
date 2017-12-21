@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    	<link rel="stylesheet" href="css/basic.css">
+    	<link rel="stylesheet" href="css/publish.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/publish.js"></script>
+		<script src="js/publish-rent.js"></script>
+		<script src="js/publish-rent-more.js"></script>
+	</head>
+	<body>
+	<!--#include file="product-header.html" -->
+		<div class="header">
+	        <div class="wrap">
+	            <a href="/yezhu" class="logo"></a>
+	            <div class="nav">
+	                <ul>
+	                    <li><a href="publish.html">我要卖房</a></li>
+	                    <li><a href="publish-rent.html" class="active">我要出租</a></li>
+	                </ul>
+	            </div>
+	        </div>
+    	</div>
+    	<div class="m-jumbotron">
+	        <div class="title">
+	            发布出租房源
+	        </div>
+	        <div class="sub-title">
+	            8000+全国链家门店·10万+全国经纪人·链家倾情服务15年+
+	        </div>
+    	</div>
+    	<div class="main">
+        	<form class="main-form" name="mainForm">
+	            <ul>
+	                <li>小区所在城市</li>
+	                <li>南京</li>
+	            </ul>
+	            <ul>
+	                <li>小区</li>
+	                <li>
+	                    <div>
+	                        <input type="text" placeholder="请输入小区名" id="district" name="district">
+	                        <!--后台加载数据-->
+	                        <ul style="">
+	                            <li>
+	                                <span>福建路</span>
+	                                <span>三牌楼 鼓楼</span>
+	                            </li>
+	                            <li>
+	                               <span>福建路</span>
+	                                <span>鼓楼</span>
+	                            </li>
+	                            <li>
+	                                <span>福建新村</span>
+	                                <span>三牌楼 鼓楼</span>
+	                            </li>
+	                            <li>
+	                               <span>方家营(甜水湾小区)</span>
+	                                <span>建宁路 鼓楼</span>
+	                            </li>
+	                            <li>
+	                                <span>钟阜大厦</span>
+	                                <span>三牌楼 鼓楼</span>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                </li>
+	            </ul>
+	            <ul>
+	                <li>房屋地址</li>
+	                <li>
+	                    <input type="text" placeholder="楼栋号/单元号/房门号" id="buildingNo" name="buildingNo">
+	                </li>
+	            </ul>
+	            <ul>
+	                <li>期望租金</li>
+	                <li>
+	                    <input type="text" placeholder="请输入您期望出租的价格" id="price" name="price">
+	                    <span>元/月</span>
+	                </li>
+	            </ul>
+	            <ul>
+	                <li>称呼</li>
+	                <li>
+	                    <input type="text" placeholder="我们应该如何称呼您" id="uname">
+	                </li>
+	            </ul>
+	            <ul>
+	                <li>手机号码</li>
+	                <li>
+	                    <input type="text" placeholder="您的联系方式,方便我们及时与您联系" id="phone">
+	                </li>
+	            </ul>
+	            <input type="button" value="提交并完善信息" id="btn1" onClick="ok()">
+        	</form>
+		</div>
+	<script language="JavaScript">
+        function ok()
+        {
+            document.formDetails.district1.value=document.mainForm.district.value;
+            document.formDetails.buildingNo1.value=document.mainForm.buildingNo.value;
+            document.formDetails.price1.value=document.mainForm.price.value;
+        }
+	</script>
+		<!--#include file="footer.html" -->
+	<div class="publish-details" style="height: 120%">
+		<form  class="form-details" name="formDetails">
+			<p>继续完善您的信息<a style="float:right;cursor: pointer;" id="close">X</a></p>
+			<ul>
+				<li><span>标题:</span>
+					<input type="text" name="title" id="title" placeholder="请输入标题">
+				</li>
+				<li><span>地区:</span>
+					<input type="text" name="area" id="area" placeholder="请输入地区">
+				</li>
+				<li><span>小区:</span>
+					<input type="text" name="district1" id="district1">
+				</li>
+				<li><span>详细地址:</span>
+					<input type="text" name="metro" id="metro" placeholder="请输入详细地址">
+				</li>
+				<li><span>门牌号:</span>
+					<input type="text" name="buildingNo1" id="buildingNo1" placeholder="">
+				</li>
+				<li><span>租金:</span>
+					<input type="text" name="price1" id="price1" placeholder="">
+					<span>元/月</span>
+				</li>
+				<li><span>面积:</span>
+					<input type="text" name="size" id="size" placeholder="请输入房屋面积">
+					<span>平方米</span>
+				</li>
+				<li><span>室厅厨房卫生间:</span>
+					<select name="house_room" id="house_room">
+						<option>--请选择--</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<span>室</span>
+					<select name="house_hall" id="house_hall">
+						<option>--请选择--</option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+					<span>厅</span>
+					<select name="house_kitchen" id="house_kitchen">
+						<option>--请选择--</option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+					<span>厨</span>
+					<select name="house_toilet" id="house_toilet">
+						<option>--请选择--</option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+					<span>卫</span>
+				</li>
+				<li><span>房屋朝向:</span>
+					<select name="side" id="side">
+						<option>--请选择--</option>
+						<option value="1">南</option>
+						<option value="2">南 北</option>
+						<option value="3">北</option>
+						<option value="4">东 南</option>
+					</select>
+				</li>
+				<li><span>所在楼层:</span>
+					<select name="floor" id="floor">
+						<option>--请选择--</option>
+						<option value="1">低楼层</option>
+						<option value="2">中楼层</option>
+						<option value="3">高楼层</option>
+					</select>
+					<span>(共</span>
+					<input type="text" style="width: 30px" id="floorNum">
+					<span>层)</span>
+				</li>
+				<li >
+					<span>上传图片:</span>
+					<input type="text" readonly value="" id="up-routes">
+					<input type="button" value="..." id="upload">
+					<input type="button" value="上传" id="up-btn">
+					<input type="file" id="img-upload" style="width:70px">
+				</li>
+				<li>
+					<input type="button" class="details-submit" style="width: 190px;height: 61px;margin: auto"
+						   value="提交委托" id="detailsSubmit">
+				</li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>
