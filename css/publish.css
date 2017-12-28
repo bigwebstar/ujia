@@ -115,9 +115,18 @@ form.main-form > ul:nth-child(2) ul li {
   background-color: #eaf1e6;
 }
 .main-form > ul:nth-child(3) input {
-  width: 336px;
-  height: 30px;
+  width: 66px;
+  height: 40px;
   padding: 5px;
+  float: left;
+}
+.main-form > ul:nth-child(3) span {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  font-size: 18px;
+  color: #CCCCCC;
+  margin-right: 10px;
 }
 .main-form > ul:nth-child(7) > li:last-child > input:last-child {
   float: right;
@@ -221,7 +230,7 @@ ul:after {
   color: #999;
 }
 .publish-details {
-  height: 150%;
+  height: 100%;
   width: 100%;
   position: absolute;
   left: 0;
@@ -230,7 +239,7 @@ ul:after {
   padding-top: 50px;
 }
 .form-details {
-  height: 80%;
+  height: 950px;
   width: 960px;
   margin: 0 auto;
   background: white;
@@ -283,8 +292,13 @@ ul:after {
   width: 200px;
   margin-bottom: 10px;
 }
+.form-details ul li:nth-child(14) {
+  width: 100%;
+  height: 55px;
+  text-align: center;
+}
 .form-details .details-submit {
-  display: block;
+  display: inline-block;
   margin: 50px auto 0;
   width: 190px;
   line-height: 55px;
@@ -294,4 +308,9 @@ ul:after {
   border-radius: 5px;
   background-color: #00ac65 ;
   cursor: pointer;
+}
+#img-upload {
+  width: 0;
+  height: 0;
+  display: none;
 }
