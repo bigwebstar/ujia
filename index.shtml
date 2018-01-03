@@ -18,7 +18,7 @@
 	                <a href="#">
 	                    <img src="img/nav/second.png">
 	                    <b>找二手房</b>
-	                    <p>真实二手房源，链家承诺真实在售所见即真</p>
+	                    <p>真实二手房源，优家承诺真实在售所见即真</p>
 	                </a>
 	            </li>
 	            <li class="hvr-bob lf">
@@ -65,7 +65,7 @@
             <div class="top">
                 <div class="top-bg"></div>
                 <p>
-                    好房源那么多,我们为你精选,链家网会越来越懂你
+                    好房源那么多,我们为你精选,优家网会越来越懂你
                     <a href="#">更多南京二手房</a>
                 </p>
             </div>
@@ -399,12 +399,12 @@
     <div class="h-truth">
         <div class="warp">
             <div class="lf">
-                <div class="truth-txt"></div>
+<!--                 <div class="truth-txt"></div> -->
             </div>
-            <div class="truth">
+            <div class="truth" style="float:left">
                 <p>
                     真实存在，真实在售，真实价格，真实图片！<br>
-                    链家郑重向用户承诺：真实房源，假一赔百元！
+                    优家郑重向用户承诺：真实房源，假一赔百元！
                 </p>
             </div>
         </div>

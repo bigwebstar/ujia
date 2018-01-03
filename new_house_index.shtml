@@ -368,7 +368,7 @@
 			<div class="f1">
 				<div class="logo">
 					<a href="#">
-						<img src="img/new_house_index/logo.png" width="180" height="33" border="0" alt="" title="链家房产网">
+						<img src="img/images/header/logo.png" width="500" height="33" border="0" alt="" title="优家房产网">
 					</a>
 					<span class="nav-border"></span>
 					<a href="" class="city" title="选择城市">
@@ -538,7 +538,11 @@
                         <span class="app_tips">
                             <i></i>
                             <img src="img/new_house_index/sidebar_qr.png " alt="">
+<<<<<<< HEAD
                             <!--<div class="title">链家APP</div>-->
+=======
+                            <!--<div class="title">优家APP</div>-->
+>>>>>>> develop
                         </span>
                     </a>
                 </li>
@@ -819,7 +823,7 @@
     <!--中间弹出框-->
 <!--     <div id="box"> -->
 <!-- 				<p class="box_intr"> -->
-<!-- 					您对新版链家网有任何意见和建议，或使用中遇到的问题，请在本页面反馈。 -->
+<!-- 					您对新版优家网有任何意见和建议，或使用中遇到的问题，请在本页面反馈。 -->
 <!-- 					我们会每天关注并不断优化产品，为您提供更好的服务！ -->
 <!--         </p> -->
 <!--         <div class="tab"> -->

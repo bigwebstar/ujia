@@ -19,8 +19,9 @@
   height: 66px;
   display: inline-block;
   float: left;
-  background-image: url(../img/images/header/spriteV2_new.png);
-  background-position: 10px -365px;
+  background-image: url(../img/images/header/logo.png);
+  background-position: 0px 0px;
+  background-size:407px 66px;
 }
 .header_h1 {
   display: none;

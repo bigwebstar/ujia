@@ -31,7 +31,8 @@ div,p{
 #lianjia-search>div:first-child>span{
     width: 100px;
     height: 32px;
-    background: url(../img/product-header/sprite.png) -385px -591px  ;
+    background: url(../img/images/header/logo.png) 0px 0px;
+	background-size:300px 32px;
 }
 #lianjia-search>div:first-child>a{
     margin-top:11px;

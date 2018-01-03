@@ -16,8 +16,9 @@
 }
 .header .logo {
   width: 120px;
-  background-image: url(../img/publish/sprite.png);
-  background-position: 0 -373px;
+  background-image: url(../img/images/header/logo.png);
+  background-position: 0 0px;
+  background-size:300px 32px;
   height: 32px;
   float: left;
 }
