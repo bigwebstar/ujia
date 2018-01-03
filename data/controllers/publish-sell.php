@@ -1,5 +1,5 @@
 <?php
-require('init.php');
+require('../init.php');
 @$pno = $_REQUEST["pno"];
 @$pageSize  = $_REQUEST["pageSize"];
 if(!$pno) $pno=1;
@@ -12,7 +12,7 @@ if(!$pageSize) $pageSize=8;
         $maxPrice = 99999.99;
     }else{
 			//echo var_dump($price);
-       
+
 //			$price=explode(',', $price);
 //			$price[0] = intval(ltrim($price[0],"["));
 //			if($price[1]){
@@ -27,8 +27,8 @@ if(!$pageSize) $pageSize=8;
 			$maxPrice =	intval($price[0]);
 			$minPrice = 0;
 		}
-        
-		
+
+
     }
 @$space = $_REQUEST["space"];
     if(!$space){
@@ -49,8 +49,8 @@ if(!$pageSize) $pageSize=8;
 			$maxSpace = intval($space[0]);
 			$minSpace =0;
 		}
-        
-		
+
+
     }
 @$house_room = $_REQUEST["house_room"];
 
@@ -61,8 +61,8 @@ if(!$pageSize) $pageSize=8;
 @$decoration = $_REQUEST["decoration"];
 
 
-$sql="SELECT * FROM re_house WHERE house_type='0' ";
-$sql .= " and  $minPrice<price  AND $maxPrice>price  " ;
+$sql="SELECT * FROM re_house WHERE  ";
+$sql .= "   $minPrice<price  AND $maxPrice>price  " ;
 $sql .= " and  $minSpace<space  AND $maxSpace>space  " ;
 if(@$house_room){$sql .= " AND  house_room like '%$house_room%'  ";}
 if($floor){$sql .= " AND  floor like '%$floor%'  ";}

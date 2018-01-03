@@ -56,7 +56,7 @@ $(".x-f-block").on("click","#filBtn",function (e) {
     e.preventDefault();
     var kw = $(this).parent().children("input").val();
     sessionStorage.setItem("kw",kw);
-	location.href="new-house-sell.html";
+	location.href="new-house-sell.shtml";
 });
 //筛选查询下
 //点击切换
@@ -75,5 +75,5 @@ $(".fil-btn").on("click",function (e) {
     sessionStorage.setItem("style",style);
     var price = $(".choose").children(".fix-item").eq(3).html();
     sessionStorage.setItem("price",price);
-    location.href="new-house-sell.html";
+    location.href="new-house-sell.shtml";
 })

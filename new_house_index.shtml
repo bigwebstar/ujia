@@ -538,7 +538,7 @@
                         <span class="app_tips">
                             <i></i>
                             <img src="img/new_house_index/sidebar_qr.png " alt="">
-                            <div class="title">链家APP</div>
+                            <!--<div class="title">链家APP</div>-->
                         </span>
                     </a>
                 </li>

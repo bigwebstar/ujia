@@ -71,7 +71,7 @@ $(function(){
 		that.addClass("checked").siblings().removeClass("checked");
 		console.log(href);
 	switch(href){
-		case "second-hand-house":$(".menu").find("i").css("left",40); break;
+		case "second-hand-house":$(".menu").find("i").css("left",40);break;
 		case "new-house":$(".menu").find("i").css("left",110); break;
 		case "renting":$(".menu").find("i").css("left",175); break;
 		case "question":$(".menu").find("i").css("left",245); break;
@@ -85,6 +85,50 @@ $("#keyword-box").focus(function(){
 	$("#"+href).css("display","block")
 		.siblings().css("display","none");
 });
-$("#keyword-box").blur(function(){
-	$("#"+href).css("display","none")
+// $("#keyword-box").blur(function(){
+//     $("#"+href).css("display","none")
+// });
+//找二手房，新房，出租房搜索框
+$('#keyword-box').keyup(function (e) {
+    var title = $(this).val();
+    $.ajax({
+        type:'GET',
+        url:'data/04_search_title.php',
+        data:{title:title},
+        success:function (data) {
+            var html="";
+            for(var i=0;i<data.length;i++){
+                html+=`<li><a href="#">${data[i].title}</a></li>`
+            }
+            $('#second-hand-house , #new-house').children('.list').html(html);
+        },
+        error:function () {
+            alert('网络错误！');
+        }
+    })
 });
+
+$('#keyword-box').keyup(function (e) {
+    var title = $(this).val();
+    $.ajax({
+        type:'GET',
+        url:'data/05_search_zu_title.php',
+        data:{title:title},
+        success:function (data) {
+            var html="";
+            for(var i=0;i<data.length;i++){
+                html+=`<li><a href="#">${data[i].title}</a></li>`
+            }
+            $('#renting').children('.list').html(html);
+        },
+        error:function () {
+            alert('网络错误！');
+        }
+    })
+});
+//点击切换
+$('#second-hand-house , #new-house ,#renting').on('click','.list li a',function (e) {
+    e.preventDefault();
+    $('#keyword-box').val($(this).html());
+    $("#"+href).css("display","none");
+})

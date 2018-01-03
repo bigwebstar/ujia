@@ -82,7 +82,7 @@ function publish_step2(){
     $sql.=" house_room='$hr',house_hall='$hh',house_kitchen='$hk', ";
     $sql.=" house_toilet='$ht',side='$sd',is_lift='$il', ";
     $sql.=" decoration='$d',floor='$f',building_type='$bt', ";
-    $sql.=" ladder_ratio='$lr',property_year='$py',house_type='$htype' ";
+    $sql.=" ladder_ratio='$lr',property_year='$py',house_type='0' ";
     $sql.=" WHERE uid=$uid";
     $result=mysqli_query($conn,$sql);
     $msg=mysqli_affected_rows($conn);

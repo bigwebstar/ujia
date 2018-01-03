@@ -8,8 +8,8 @@ function loadProducts(){
                 
                 var price = parseInt(i.price);
                 html += `
-               <li>
-               <a href="#">
+               <li data-id="${i.zid}">
+               <a  href="#">
                    <img src="img/publish-sell/1.jpg" width="173px" height="135px">
                </a>
                <div class="ss-product-details">

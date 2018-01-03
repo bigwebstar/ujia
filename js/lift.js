@@ -80,7 +80,23 @@ $(function(){
 	let offset3= $newhouse.offset().top;
 	let OFFSET = [offset1,offset2,offset3];
 	console.log();
-console.log()
+console.log();
+	
+	$("#aside").on("click","ul li:last-child",function(e){
+		e.preventDefault();
+		var i = 1;
+		var timer2 = setInterval(function () {
+        i++;
+        window.scrollBy(0,-i);
+        var sctop = document.documentElement.scrollTop;
+        if(sctop<=0){
+            clearInterval(timer2);
+			timer2=null;
+        }
+		},1000/30);
+		console.log(timer2);
+	});
+
 	$(window).scroll(function(){
 		var y =scrollY;
 //		console.log(y);
@@ -96,7 +112,7 @@ console.log()
 			$aside.hide()
 		}
 	})
-		$floors.on("click","li",function(e){
+		$floors.on("click","li:not(:last-child)",function(e){
 		e.preventDefault();
 		let n = $(this).index();
 		if(n<=3){

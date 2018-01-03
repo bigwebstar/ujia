@@ -248,13 +248,25 @@
 		.tese{
 			margin:25px;
 		}
-		.col-1{
+		.col-1,.col-2{
 			width:8.33%;
 			float:left;
 			text-align:center;
+			
+		}
+		.col-1 p{
+			color:black;
+		}
+		.col-2 p{
 			color:#ccc;
 		}
 		.col-1 div{
+			width:46px;
+			height:44px;
+			background:url("img/detail/zf-icon2.png");
+			margin:10px auto;
+		}
+		.col-2 div{
 			width:46px;
 			height:44px;
 			background:url("img/detail/zf-icon-null2.png");
@@ -376,50 +388,50 @@
 				</div>
 				<h2>房源特色</h2>
 				<div class="tese">
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
-					<div class="col-1">
-						<div class="yg"></div>
-						<p class="title">衣柜</p>
-					</div>
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg"></div> -->
+<!-- 						<p class="title">衣柜</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-155px 0"></div> -->
+<!-- 						<p class="title">桌椅</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-236px 0"></div> -->
+<!-- 						<p class="title">电视</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-314px 0"></div> -->
+<!-- 						<p class="title">冰箱</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-394px 0"></div> -->
+<!-- 						<p class="title">洗衣机</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-475px 0"></div> -->
+<!-- 						<p class="title">空调</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-552px 0"></div> -->
+<!-- 						<p class="title">热水器</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-869px 0"></div> -->
+<!-- 						<p class="title">微波炉</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-631px 0"></div> -->
+<!-- 						<p class="title">暖气</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-710px 0"></div> -->
+<!-- 						<p class="title">宽带</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-1"> -->
+<!-- 						<div class="yg" style="background-position:-790px 0"></div> -->
+<!-- 						<p class="title">天然气</p> -->
+<!-- 					</div> -->
 				</div>
 			</div>
 			<div class="floor2">
@@ -456,7 +468,12 @@
 					)-SIZE;
 				var liCount=0, //保存li的个数
 						moved=0; //保存已经左移的li个数
-				$.get("data/routes/products/second_house_detail.php",location.search.slice(1))
+				var id=document.location.href.slice(document.location.href.indexOf("zid=")+4);
+				console.log(id);
+				if(id==""){
+							id=1;
+						}
+				$.get("data/routes/products/second_house_detail.php?zid="+id,location.search.slice(1))
 					.then(data=>{
 						var detail_feature = data.detail_feature;
 						var detail_pic = data.detail_pic;
@@ -464,7 +481,7 @@
 						var floor = detail_right.floor;
 						var district = detail_right.district;
 						var detail_transaction = data.detail_transaction;
-
+						console.log(detail_feature);
 						//放大镜
 							$("#mImg").attr("src",detail_pic[0].md);
 							$("#largeDiv")
@@ -534,34 +551,118 @@
 								});
 							//详情右侧
 							
+						//小图片
+							
+						var html=`
+							<div class="col-1">
+								<div class="yg" style="background-position:-155px 0"></div>
+								<p class="title" id="tables">桌椅</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-236px 0"></div>
+								<p class="title" id="tv">电视</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-314px 0"></div>
+								<p class="title" id="refrigerator">冰箱</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-394px 0"></div>
+								<p class="title" id="washing_machine">洗衣机</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-475px 0"></div>
+								<p class="title" id="air_conditioner">空调</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-552px 0"></div>
+								<p class="title" id="heater">热水器</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-869px 0"></div>
+								<p class="title" id="microwave_oven">微波炉</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-631px 0"></div>
+								<p class="title" id="radiator">暖气</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-710px 0"></div>
+								<p class="title" id="wifi">宽带</p>
+							</div>
+							<div class="col-1">
+								<div class="yg" style="background-position:-790px 0"></div>
+								<p class="title" id="natural_gas">天然气</p>
+							</div>
+						`;
+							
+						$(".tese").html(html);
+						if(detail_feature.tables==0)
+							$("#tables").parent().addClass("col-2");
+						if(detail_feature.tv==0)
+							$("#tv").parent().addClass("col-2");
+						if(detail_feature.refrigerator==0)
+							$("#refrigerator").parent().addClass("col-2");
+						if(detail_feature.washing_machine==0)
+							$("#washing_machine").parent().addClass("col-2");
+						if(detail_feature.air_conditioner==0)
+							$("#air_conditioner").parent().addClass("col-2");
+						if(detail_feature.heater==0)
+							$("#heater").parent().addClass("col-2");
+						if(detail_feature.microwave_oven==0)
+							$("#microwave_oven").parent().addClass("col-2");
+						if(detail_feature.radiator==0)
+							$("#radiator").parent().addClass("col-2");
+						if(detail_feature.wifi==0)
+							$("#wifi").parent().addClass("col-2");
+						if(detail_feature.natural_gas==0)
+							$("#natural_gas").parent().addClass("col-2");
+
+
+
 						//成交记录
-							var html = "";
-							for(var i=0;i<detail_transaction.length;i++){
-								var item = detail_transaction[i];
-								html +=`
-									<tr>
-										<td>
-											<div class="img">
-												<img src="img/old_house/sm/151237143243.jpg" alt="">
-											</div>
-											<div class="detail">
-												<h3>2室2厅</h3>
-												<p>
-													<span class="floor">${floor}</span>
-													<span class="side">${item.house_type}</span>
-													<span class="kind">精装修</span>
-												</p>
-												<p class="district">银城西堤国际六区</p>
-											</div>
-										</td>
-										<td>${item.area}平</td>
-										<td>${item.contract_time}</td>
-										<td style="color:red;">${item.price}元</td>
-										<td>u家网</td>
-									</tr>
-								`;
-							}
-							$("#tbody").html(html);
+						console.log(detail_right);
+
+						$.ajax({
+							type:"get",
+							url:"data/routes/products/detail_transaction.php",
+							success:function(data){
+								console.log(data.content);
+								var picList=[];
+								for(var k=0;k<data.pic.length;k++){
+									if(data.pic[k].title=="户型图"){
+										picList.push(data.pic[k]);
+									}
+								}
+								var html = "";
+								for(var i=0;i<detail_transaction.length;i++){
+									var item = detail_transaction[i];
+									html +=`
+										<tr>
+											<td>
+												<div class="img">
+													<img src=${picList[i].sm} alt="">
+												</div>
+												<div class="detail">
+													<h3>${data.content[i].house_room}室${data.content[i].house_hall}厅</h3>
+													<p>
+														<span class="floor">${floor}</span>
+														<span class="side">${item.house_type}</span>
+														<span class="kind">精装修</span>
+													</p>
+													<p class="district">${data.content[i].area}${data.content[i].district}</p>
+												</div>
+											</td>
+											<td>${item.area}平</td>
+											<td>${item.contract_time}</td>
+											<td style="color:red;">${item.price}元</td>
+											<td>u家网</td>
+										</tr>
+									`;
+								}
+								$("#tbody").html(html);
+								}
+						})
 					});
 		})
 	</script>

@@ -94,7 +94,7 @@ for($i=0;$i<count($rows);$i++){
 	$sql1="SELECT label FROM re_house_feature WHERE hid=$hid";
 	$result=mysqli_query($conn,$sql1);
 	$label=mysqli_fetch_all($result,MYSQLI_ASSOC);
-	$labels[$i]=$label[0]["label"];
+	@$labels[$i]=$label[0]["label"];
 }
 
 for($l=0;$l<count($rows);$l++){
@@ -102,7 +102,7 @@ for($l=0;$l<count($rows);$l++){
 	$sql="SELECT img FROM re_house_pic WHERE hid=$hid LIMIT 1";
 	$result=mysqli_query($conn,$sql);
 	$img=mysqli_fetch_all($result,MYSQLI_ASSOC);
-	$imgs[$l]=$img[0]["img"];
+	@$imgs[$l]=$img[0]["img"];
 }
 //echo print_r($labels);
 $all=array();

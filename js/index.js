@@ -254,7 +254,7 @@ $(()=>{
 				data:{uname:name,upwd:pwd,phone:pho},
 				success:function (data) {
 					if(data.code==1){
-						location.href="index.html";
+						location.href="index.shtml";
 					}else{
 						var txt="用户名已被占用，请重新输入";
 						test(txt);
