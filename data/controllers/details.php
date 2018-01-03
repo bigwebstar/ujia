@@ -29,3 +29,25 @@ function addDetail(){
 	$output['detail_transaction'] = $rows;
 	echo json_encode($output);
 }
+function recodeDetail(){
+	global $conn;
+	$output = [];
+	$sql="SELECT * FROM re_zufang_transaction";
+	$result = mysqli_query($conn,$sql);
+	$rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
+	$output['content']=$rows;
+	echo json_encode($output);
+}
+function re_zufang_transaction(){
+	global $conn;
+	$output = [];
+	$sql="SELECT * FROM re_zufang_pic";
+	$result = mysqli_query($conn,$sql);
+	$rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
+	$output['pic']=$rows;
+	$sql="SELECT * FROM re_zufang";
+	$result = mysqli_query($conn,$sql);
+	$rows = mysqli_fetch_all($result,MYSQLI_ASSOC);
+	$output['content']=$rows;
+	echo json_encode($output);
+}

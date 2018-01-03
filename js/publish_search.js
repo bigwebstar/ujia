@@ -30,3 +30,9 @@ $(".position").on("click",".position-nav li a:last-child",function (e) {
     $(".position-content").children("li").eq(0).hide();
 });
 
+$(".ss-product").on("click","li",function(e){
+	e.preventDefault();
+	$tar=$(this);
+	location.href="detail.shtml?zid="+$tar.data("id");
+})
+
