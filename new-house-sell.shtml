@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/second-sell.css">
    <link rel="stylesheet" href="css/product-header.css" />
+	 <link href="if_distillery_595696.ico" rel="shortcut icon" />
     <style>
         .gou{
             position: absolute;

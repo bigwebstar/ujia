@@ -9,6 +9,7 @@
 		<script src="js/publish_zu.js"></script>
 		<script src="js/publish-rent.js"></script>
 		<script src="js/publish-rent-more.js"></script>
+		<link href="if_distillery_595696.ico" rel="shortcut icon" />
 	</head>
 	<body>
 	<!--#include file="product-header.html" -->

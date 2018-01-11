@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>该房屋详情页面</title>
+	<link href="if_distillery_595696.ico" rel="shortcut icon" />
 	<link rel="stylesheet" href="css/basic.css">
 	<style>
 		body{

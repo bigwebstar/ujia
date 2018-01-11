@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+		<link href="if_distillery_595696.ico" rel="shortcut icon" />
     <style>
         *{
             margin:0;
@@ -538,11 +539,7 @@
                         <span class="app_tips">
                             <i></i>
                             <img src="img/new_house_index/sidebar_qr.png " alt="">
-<<<<<<< HEAD
-                            <!--<div class="title">链家APP</div>-->
-=======
                             <!--<div class="title">优家APP</div>-->
->>>>>>> develop
                         </span>
                     </a>
                 </li>

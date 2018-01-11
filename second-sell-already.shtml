@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="css/product-header.css" />
 	 <script src="js/jquery-3.2.1.js"></script>
     <script src="js/second-sell-already.js"></script>
+		<link href="if_distillery_595696.ico" rel="shortcut icon" />
 </head>
 <body>
 <!--#include file="product-header.html" -->
