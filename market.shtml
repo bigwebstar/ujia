@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/market.css">
+		<link href="if_distillery_595696.ico" rel="shortcut icon" />
 </head>
 <body>
 <!--#include file="product-header.html" -->

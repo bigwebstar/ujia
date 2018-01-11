@@ -7,6 +7,7 @@
     	<link rel="stylesheet" href="css/publish.css">
 		<script src="js/jquery-3.2.1.js"></script>
 		<script src="js/publish.js"></script>
+		<link href="if_distillery_595696.ico" rel="shortcut icon" />
 	</head>
 	<body>
 		<!--#include file="product-header.html" -->
